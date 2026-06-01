@@ -2,6 +2,8 @@
 
 Repositorio reducido para conservar el nucleo del algoritmo BSG aplicado al
 Container Loading Problem y los benchmarks necesarios para ejecutarlo.
+`Basado en el excelente Metasolver de I. Araya`
+- Este fork tiene como única finalidad la experimentación y aprendizaje en base al material original.
 
 ## Estructura
 
