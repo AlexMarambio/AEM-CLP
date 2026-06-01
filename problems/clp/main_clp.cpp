@@ -10,9 +10,6 @@
 #include "args.hxx"
 //#include "objects/State.cpp"
 #include "clpState.h"
-#include "clpStatekd.h"
-#include "BlockSet.h"
-#include "BSG_midBSG.h"
 #include "VCS_Function.h"
 #include "VCS_Function.h"
 #include "SpaceSet.h"
@@ -30,37 +27,6 @@ using namespace std;
 
 
 
-
-void dfsPrintChild(const State* node, ofstream& file){
-	file << "{ "<<endl;
-	file<<"\t \"name\":\""<<node->get_id()<<"\",";
-	file<<"\t \"parent\":\""<<node->get_parent()->get_id() <<"\",";
-	file<<"\t \"value\":\""<<node->get_value() <<"\",";
-	file<<"\t \"sd\":\"\",";
-	file<<"\t \"mcts_value\":\"\",";
-	file<<"\t \"stimated_sd\":\"\",";
-	file<<"\t \"ponderated_sd\":\"\",";
-	file<<"\t \"depth\":\"\",";
-	file<<"\t \"num_visit\":\"\"";
-	file<< "\t,\"simulations\":[]"<<endl;
-
-
-	if(!node->get_children().empty()){
-		file<< "\t,\"children\":["<<endl;
-		for(auto c:node->get_children()){
-			dfsPrintChild(c,file);
-			if(c!=node->get_children().back())
-			    file<<","<<endl;
-		}
-		file<<"]";
-	}
-	file<<"}"<<endl;
-}
-
-void pointsToTxt(State* root, int it) {
-	ofstream myfile("problems/clp/tree_plot/flare"+std::to_string(it)+".json");
-	dfsPrintChild(root,myfile);
-}
 
 int main(int argc, char** argv){
 
@@ -80,8 +46,6 @@ int main(int argc, char** argv){
 	args::Flag _json(parser, "double", "json output tuple: (loaded, remaining, utilization)", {"json"});
 	args::Flag _verbose(parser, "layout", "Show the actions to reach the solution", {"verbose"});
 	args::ValueFlag<int> _verbose2(parser, "layout", "Show the actions to reach the solution (v2). Should be indicated the number of actions per state", {"verbose2"});
-
-	args::Flag _plot(parser, "double", "plot tree", {"plot"});
 
 	args::Flag fsb(parser, "fsb", "full-support blocks", {"fsb"});
 	args::Flag trace(parser, "trace", "Trace", {"trace"});
@@ -155,10 +119,13 @@ int main(int argc, char** argv){
     //bool kdtree= false;
 
     Block::FSB=fsb;
-    clpState* s0 = new_state(file,inst, min_fr, 10000, f);
-
-    //if(kdtree)
-      // s0 = new clpState_kd(*s0);
+    clpState* s0 = NULL;
+    try {
+      s0 = new_state(file,inst, min_fr, 10000, f);
+    } catch (const exception& e) {
+      cerr << "Error cargando instancia: " << e.what() << endl;
+      return 1;
+    }
 
     cout << "n_blocks:"<< s0->get_n_valid_blocks() << endl;
 
@@ -167,12 +134,6 @@ int main(int argc, char** argv){
     VCS_Function* vcs = new VCS_Function(s0->nb_left_boxes, *s0->cont,
     alpha, beta, gamma, p, delta, 0.0, r);
 
-	/*if(kdtree){
-		kd_block::set_vcs(*vcs);
-		kd_block::set_alpha(alpha);
-		kd_block::set_alpha(p);
-	}*/
-
 	//for(int i=0;i<10000; i++)
 	//	exp->best_action(*s0);
 
@@ -180,8 +141,7 @@ int main(int argc, char** argv){
     SearchStrategy *gr = new Greedy (vcs);
 
 	cout << "bsg" << endl;
-    BSG *bsg= new BSG(vcs,*gr, 4, 0.0, 0, _plot);
-    //BSG_midBSG *bsg= new BSG_midBSG(*gr, *exp, 4);
+    BSG *bsg= new BSG(vcs,*gr, 4);
 
     //bsg->set_shuffle_best_path(true);
 
@@ -195,20 +155,11 @@ int main(int argc, char** argv){
 
 	cout << "running" << endl;
 
-    if(_plot)
-    	de=bsg;
-
     double eval=de->run(s_copy, maxtime, begin_time) ;
 
     cout << "% volume utilization" << endl;
 	cout << eval*100 << endl;
 	// << " " << de->get_best_state()->get_value2() << " " << eval*de->get_best_state()->get_value2() << endl;
-
-
-    if(_plot){
-    	pointsToTxt(&s_copy, 0);
-    	system("firefox problems/clp/tree_plot/index.html");
-    }
 
 
   if(_verbose || _verbose2){

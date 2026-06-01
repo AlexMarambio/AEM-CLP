@@ -10,6 +10,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <stdexcept>
 
 #include "objects2/BoxShape.h"
 #include "clpState.h"
@@ -179,9 +180,13 @@ clpState* new_state(string file, int i, double min_fr, int max_bl, clpState::For
   clpState::weight_of_allboxes=0.0;
 
 	ifstream in(file.c_str());
+	if(!in)
+		throw runtime_error("No se pudo abrir el archivo de instancia: " + file);
+
 	string line;
 	if(f==clpState::BR || f==clpState::BRw || f==clpState::BRwp){
-		getline(in,line); //number of instances
+		if(!getline(in,line))
+			throw runtime_error("Archivo de instancia vacio o invalido: " + file);
 	}
 
 	clpState *s=NULL;
@@ -190,15 +195,18 @@ clpState* new_state(string file, int i, double min_fr, int max_bl, clpState::For
 		string line;
 
 		if(f==clpState::BR || f==clpState::BRw || f==clpState::BRwp){
-			getline(in, line ); //n_inst random_seed
+			if(!getline(in, line ))
+				throw runtime_error("No se pudo leer la cabecera de la instancia " + to_string(inst + 1));
 		}
 
-		getline(in, line); //L W H
+		if(!getline(in, line))
+			throw runtime_error("No se pudieron leer las dimensiones de la instancia " + to_string(inst + 1));
 
 		if(inst==i){
 			std::stringstream ss(line);
 			long l,w,h;
-			ss >> l >> w >> h;
+			if(!(ss >> l >> w >> h))
+				throw runtime_error("Dimensiones invalidas en la instancia " + to_string(inst + 1));
 			cout << l << " " <<  w << " " << h << endl;
 			//if(f==clpState::_1C) {l*=10; w*=10; h*=10;}
 			s= new clpState((Block::FSB)? new Block_fsb(l,w,h):new Block(l,w,h));
