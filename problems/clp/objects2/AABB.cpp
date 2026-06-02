@@ -28,26 +28,51 @@ list<AABB> AABB::subtract(const AABB& b) const{
 
 	list<AABB> sub;
 
-    if(b2.getXmax()<b1.getXmax())
-    	sub.push_back( AABB(b2.getXmax(),b1.getYmin(),b1.getZmin(),b1.getXmax(),b1.getYmax(),b1.getZmax()));
+	long x1 = b1.getXmin();
+	long x2 = b1.getXmax();
+	long y1 = b1.getYmin();
+	long y2 = b1.getYmax();
+	long z1 = b1.getZmin();
+	long z2 = b1.getZmax();
 
-    if(b2.getYmax()<b1.getYmax())
-    	sub.push_back( AABB(b1.getXmin(),b2.getYmax(),b1.getZmin(),b1.getXmax(),b1.getYmax(),b1.getZmax()));
+	long bx1 = b2.getXmin();
+	long bx2 = b2.getXmax();
+	long by1 = b2.getYmin();
+	long by2 = b2.getYmax();
+	long bz1 = b2.getZmin();
+	long bz2 = b2.getZmax();
 
-    if(b2.getZmax()<b1.getZmax())
-    	sub.push_back( AABB(b1.getXmin(),b1.getYmin(),b2.getZmax(),b1.getXmax(),b1.getYmax(),b1.getZmax()));
+	// left slab
+	if(bx1 > x1)
+		sub.push_back(AABB(x1, y1, z1, bx1, y2, z2));
 
+	// right slab
+	if(bx2 < x2)
+		sub.push_back(AABB(bx2, y1, z1, x2, y2, z2));
 
-    if(b2.getXmin()>b1.getXmin())
-    	sub.push_back( AABB(b1.getXmin(),b1.getYmin(),b1.getZmin(),b2.getXmin(),b1.getYmax(),b1.getZmax()));
+	long rx1 = max(x1, bx1);
+	long rx2 = min(x2, bx2);
 
-    if(b2.getYmin()>b1.getYmin())
-    	sub.push_back( AABB(b1.getXmin(),b1.getYmin(),b1.getZmin(),b1.getXmax(),b2.getYmin(),b1.getZmax()));
+	// back slab
+	if(by1 > y1 && rx2 > rx1)
+		sub.push_back(AABB(rx1, y1, z1, rx2, by1, z2));
 
-    if(b2.getZmin()>b1.getZmin())
-    	sub.push_back( AABB(b1.getXmin(),b1.getYmin(),b1.getZmin(),b1.getXmax(),b1.getYmax(),b2.getZmin()));
+	// front slab
+	if(by2 < y2 && rx2 > rx1)
+		sub.push_back(AABB(rx1, by2, z1, rx2, y2, z2));
 
-    return sub;
+	long ry1 = max(y1, by1);
+	long ry2 = min(y2, by2);
+
+	// bottom slab
+	if(bz1 > z1 && rx2 > rx1 && ry2 > ry1)
+		sub.push_back(AABB(rx1, ry1, z1, rx2, ry2, bz1));
+
+	// top slab
+	if(bz2 < z2 && rx2 > rx1 && ry2 > ry1)
+		sub.push_back(AABB(rx1, ry1, bz2, rx2, ry2, z2));
+
+	return sub;
 }
 
 

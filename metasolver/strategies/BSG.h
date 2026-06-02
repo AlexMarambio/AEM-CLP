@@ -31,7 +31,7 @@ public:
 	BSG(ActionEvaluator* evl, SearchStrategy& greedy, int beams, double p_elite=0.0, int max_level_size=0, bool plot=false) :
 		SearchStrategy(evl), greedy(greedy), beams(beams),
 		max_level_size((max_level_size==0)? beams*beams:max_level_size),
-		p_elite(p_elite), n_elite(max(1, (int)(p_elite*beams))), shuffle_best_path(false), plot(plot) {}
+		p_elite(p_elite), n_elite(max(1, (int)(p_elite*beams))), shuffle_best_path(false), plot(plot), nodes_explored(0) {}
 
 
 	virtual ~BSG();
@@ -99,6 +99,7 @@ public:
 
 	void set_beams(int b){beams=b;}
 
+	size_t get_nodes_explored() const { return nodes_explored; }
 
 protected:
 
@@ -152,6 +153,11 @@ protected:
 	 * Number of beams
 	 */
 	int beams;
+
+	/**
+	 * Instrumentation counters for node expansion.
+	 */
+	size_t nodes_explored;
 
 	/*
 	 * Max number of expanded nodes in a level of the tree

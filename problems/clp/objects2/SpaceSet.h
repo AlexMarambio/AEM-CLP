@@ -37,6 +37,12 @@ public:
 	SpaceSet (Vector3& cont ) : cont(cont), marked(NULL) { }
 
 	SpaceSet (const AABBContainer<Space>& a, Vector3& cont) : AABBContainer<Space>(), cont(cont), marked(NULL) {
+		if(cont.getX()==0 && cont.getY()==0 && cont.getZ()==0){
+			// no-op
+		}
+		if(cont.getX()==587 && cont.getY()==233 && cont.getZ()==220){
+			cerr << "Copy SpaceSet this=" << this << " source_addr=" << &a << " source_size=" << a.size() << "\n";
+		}
 		if(a.size()>0){
 			const Space* obj=&a.top();
 			while(true){

@@ -28,6 +28,9 @@ add_library(bsg
   metasolver/State.cpp
   metasolver/strategies/BSG.cpp
   metasolver/strategies/Greedy.cpp
+  metasolver/strategies/BSG_VCS_MCTS.cpp
+  metasolver/mcts/MCTS.cpp
+  metasolver/mcts/MCTSNode.cpp
 )
 
 add_library(clp

@@ -111,7 +111,11 @@ protected:
 	Block(const Block& b) : Volume(b.getL(),b.getW(),b.getH()),
 		occupied_volume(b.occupied_volume), n_boxes(b.n_boxes),
 	 	spaces(new SpaceSet(*b.spaces, *this)), blocks(new AABBList(*b.blocks)),
-		total_weight(b.total_weight), total_profit(b.total_profit) {	}
+		total_weight(b.total_weight), total_profit(b.total_profit) {
+        if(getL()==587 && getW()==233 && getH()==220){
+            cerr << "Copy Block this=" << this << " source=" << &b << " source_spaces=" << b.spaces << " occupied=" << occupied_volume << " blocks=" << b.blocks->size() << " spaces=" << b.spaces->size() << "\n";
+        }
+    }
 
 
     void MatLab_printR(int i=1, int j=1, double R=0.0, double G=0.0, double B=0.0, double alpha=1.0, Vector3 mins=Vector3(0,0,0)) const{

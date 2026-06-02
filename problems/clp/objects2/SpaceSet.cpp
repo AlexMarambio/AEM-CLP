@@ -18,8 +18,8 @@ namespace clp{
 
 
 void SpaceSet::crop_volume(const AABB& volume, const Vector3& cont, const Vector3& min_dim){
+	if(global::TRACE) cout << "crop_volume volume=" << volume << " cont=" << cont << " min_dim=" << min_dim << "\n";
 	list<const Space*> intersected_objects = get_intersected_objects(volume);
-
 
 	list<Space> new_objects;
 	//se eliminan todos los objetos que itersectan a volume
@@ -30,12 +30,15 @@ void SpaceSet::crop_volume(const AABB& volume, const Vector3& cont, const Vector
 			list<AABB> sub = obj.subtract(volume);
             while(sub.size()){
             	if(min_dim<=sub.front().getDimensions())
-            		new_objects.push_back( Space(sub.front(), cont));
+				new_objects.push_back( Space(sub.front(), cont));
             	sub.pop_front();
             }
-		}else
+		}else{
+			if(global::TRACE && obj.getL()==cont.getX() && obj.getW()==cont.getY() && obj.getH()==cont.getZ()){
+				cout << "re-adding full-container space unchanged for volume=" << volume << "\n";
+			}
 			new_objects.push_back(Space(obj));
-
+		}
 		erase(obj);
 	}
 
@@ -66,30 +69,27 @@ void SpaceSet::remove_nonmaximal_objects(list<Space>& objs){
 bool SpaceSet::has_next() const { return (data_it != data.end()); }
 
 const Space& SpaceSet::next() const {
-const Space& sp=*data_it; data_it++;
-if(&(*data_it) == marked) data_it++;
-return sp;
+    const Space& sp = *data_it;
+    data_it++;
+    if(data_it != data.end() && &(*data_it) == marked) data_it++;
+    return sp;
 };
 
 void SpaceSet::pop(){ if(marked) erase(*marked); }
 
 const Space* SpaceSet::_insert(const Space& sp){
 	pair<set<Space, by_manhattan_distance>::iterator,bool> p = data.insert(sp);
-	if(global::TRACE) cout << "insert_space:+" <<  (*p.first) << ";" << &(*p.first) << endl;
+	if(global::TRACE) cout << "insert_space:this=" << this << " +" <<  (*p.first) << ";" << &(*p.first) << endl;
     if(p.second)
-    	return (&(*p.first));
+     return (&(*p.first));
     else
-    	return NULL;
+     return NULL;
 }
 
-/*
-const Space& SpaceSet::top() const{
-	data_it = data.begin();
-	const Space& sp=*data_it;
-	data_it++;
-	return sp;
-}*/
-
+void SpaceSet::_erase(const Space& sp){
+	if(global::TRACE) cout << "delete_space:this=" << this << " " << sp << ";" << &sp << endl;
+    data.erase(sp);
+}
 
 const Space& SpaceSet::top() const{
 
@@ -97,11 +97,6 @@ const Space& SpaceSet::top() const{
 	marked=&(*data_it);
     data_it++;
 	return *marked;
-}
-
-void SpaceSet::_erase(const Space& sp){
-	if(global::TRACE) cout << "delete_space: " << sp << ";" << &sp << endl;
-    data.erase(sp);
 }
 
 class SpaceSet ;

@@ -49,11 +49,59 @@ void Block::insert(const Block& block, const Vector3& point, const Vector3 min_d
     }
 
     //Se actualiza el volumen ocupado
+    if(getL()==587 && getW()==233 && getH()==220){
+        cerr << "Insert block container=" << this << " blocks=" << blocks->size() << " spaces=" << spaces->size() << " LWH=" << block.getL() << "," << block.getW() << "," << block.getH()
+             << " point=" << point << " cont=" << getL() << "," << getW() << "," << getH()
+             << " occupied_before=" << occupied_volume << " block_occ=" << block.getOccupiedVolume() << "\n";
+    }
+
     occupied_volume += block.getOccupiedVolume();
     total_weight += block.getTotalWeight();
     total_profit += block.getTotalProfit();
 
+    if(point.getX() < 0 || point.getY() < 0 || point.getZ() < 0 ||
+       point.getX() + block.getL() > getL() ||
+       point.getY() + block.getW() > getW() ||
+       point.getZ() + block.getH() > getH()){
+        cerr << "Invalid block placement: point=" << point << " block=" << block.getL() << "," << block.getW() << "," << block.getH() << " cont=" << getL() << "," << getW() << "," << getH() << "\n";
+    }
+
+    if(occupied_volume > getVolume()){
+        cerr << "Overflow in container after insert: occupied=" << occupied_volume << " volume=" << getVolume() << "\n";
+        abort();
+    }
+
 	AABB b(point, &block);
+
+    list<const AABB*> overlaps = blocks->get_intersected_objects(b);
+    list<const AABB*> real_overlaps;
+    for(const AABB* o : overlaps){
+        bool intersects = o->strict_intersects(b);
+        if(intersects){
+            real_overlaps.push_back(o);
+        }
+        if(!intersects){
+            continue;
+        }
+        cerr << "strict_intersects debug: candidate=" << o->getXmin() << "," << o->getYmin() << "," << o->getZmin()
+             << " - " << o->getXmax() << "," << o->getYmax() << "," << o->getZmax()
+             << "   new=" << b.getXmin() << "," << b.getYmin() << "," << b.getZmin()
+             << " - " << b.getXmax() << "," << b.getYmax() << "," << b.getZmax()
+             << " xlo=" << (o->getXmax()<=b.getXmin())
+             << " xhi=" << (b.getXmax()<=o->getXmin())
+             << " ylo=" << (o->getYmax()<=b.getYmin())
+             << " yhi=" << (b.getYmax()<=o->getYmin())
+             << " zlo=" << (o->getZmax()<=b.getZmin())
+             << " zhi=" << (b.getZmax()<=o->getZmin()) << "\n";
+    }
+    if(!real_overlaps.empty()){
+        cerr << "Overlap detected for block LWH=" << block.getL() << "," << block.getW() << "," << block.getH() << " point=" << point << " overlaps=" << real_overlaps.size() << "\n";
+        for(const AABB* o : real_overlaps){
+            cerr << " existing=" << o->getXmin() << "," << o->getYmin() << "," << o->getZmin() << " - "
+                 << o->getXmax() << "," << o->getYmax() << "," << o->getZmax() << "\n";
+        }
+        abort();
+    }
 
     spaces->crop_volume(b,*this, min_dim);
 

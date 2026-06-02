@@ -37,6 +37,7 @@ list<State*> BSG::next(list<State*>& S){
          int w =  (double) max_level_size / (double) S.size() + 0.5;
 
          get_best_actions(state, best_actions, w);
+         nodes_explored += best_actions.size();
 
 
 

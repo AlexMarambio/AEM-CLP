@@ -17,6 +17,8 @@
 #include "DoubleEffort.h"
 #include "GlobalVariables.h"
 #include "BSG.h"
+#include "../metasolver/SolverConfig.h"
+#include "../metasolver/strategies/BSG_VCS_MCTS.h"
 
 bool global::TRACE = false;
 
@@ -43,6 +45,19 @@ int main(int argc, char** argv){
 	args::ValueFlag<double> _gamma(parser, "double", "Gamma parameter", {"gamma"});
 	args::ValueFlag<double> _delta(parser, "double", "Delta parameter", {"delta"});
 	args::ValueFlag<double> _p(parser, "double", "p parameter", {'p'});
+	args::ValueFlag<string> _mode(parser, "string", "Solver mode: bsg_vcs, bsg_vcs_mcts, compare", {"mode"});
+	args::ValueFlag<int> _beams(parser, "int", "Beam width", {"beams"});
+	args::ValueFlag<int> _max_level_size(parser, "int", "Max number of expanded nodes per level", {"max_level_size"});
+	args::ValueFlag<int> _top_k_vcs(parser, "int", "Top K candidates selected by VCS", {"top_k_vcs"});
+	args::ValueFlag<int> _mcts_iterations(parser, "int", "MCTS iterations", {"mcts_iterations"});
+	args::ValueFlag<int> _mcts_depth(parser, "int", "MCTS depth limit", {"mcts_depth_limit"});
+	args::ValueFlag<double> _mcts_time(parser, "double", "MCTS time limit seconds", {"mcts_time_limit_seconds"});
+	args::ValueFlag<double> _exploration(parser, "double", "MCTS exploration constant", {"exploration_constant"});
+	args::ValueFlag<double> _vcs_rollout(parser, "double", "VCS rollout bias", {"vcs_rollout_bias"});
+	args::ValueFlag<double> _reward_fill(parser, "double", "Reward weight fill rate", {"reward_fill_rate"});
+	args::ValueFlag<double> _reward_compact(parser, "double", "Reward weight compactness", {"reward_compactness"});
+	args::ValueFlag<double> _reward_contact(parser, "double", "Reward weight contact surface", {"reward_contact_surface"});
+	args::ValueFlag<double> _reward_fragmentation(parser, "double", "Reward weight fragmentation", {"reward_fragmentation"});
 	args::Flag _json(parser, "double", "json output tuple: (loaded, remaining, utilization)", {"json"});
 	args::Flag _verbose(parser, "layout", "Show the actions to reach the solution", {"verbose"});
 	args::ValueFlag<int> _verbose2(parser, "layout", "Show the actions to reach the solution (v2). Should be indicated the number of actions per state", {"verbose2"});
@@ -105,11 +120,21 @@ int main(int argc, char** argv){
 
 	global::TRACE = trace;
 
-// cout << "cargando la instancia..." << endl;
+SolverConfig config;
+string mode = (_mode)? _mode.Get(): "bsg_vcs";
+if(_beams) config.beam_width = _beams.Get();
+if(_max_level_size) config.max_level_size = _max_level_size.Get();
+if(_top_k_vcs) config.top_k_vcs = _top_k_vcs.Get();
+if(_mcts_iterations) config.mcts_iterations = _mcts_iterations.Get();
+if(_mcts_depth) config.mcts_depth_limit = _mcts_depth.Get();
+if(_mcts_time) config.mcts_time_limit_seconds = _mcts_time.Get();
+if(_exploration) config.exploration_constant = _exploration.Get();
+if(_vcs_rollout) config.vcs_rollout_bias = _vcs_rollout.Get();
+if(_reward_fill) config.reward_weight_fill_rate = _reward_fill.Get();
+if(_reward_compact) config.reward_weight_compactness = _reward_compact.Get();
+if(_reward_contact) config.reward_weight_contact_surface = _reward_contact.Get();
+if(_reward_fragmentation) config.reward_weight_fragmentation = _reward_fragmentation.Get();
 
-//a las cajas se les inicializan sus pesos en 1
-
-	cout << "***** Creando el contenedor ****" << endl;
 	cout << "File("<< format <<"): " << file << endl;
 	cout << "Instance:" << inst+1 << endl;
 	cout << "min_fr:" << min_fr << endl;
@@ -141,24 +166,94 @@ int main(int argc, char** argv){
     SearchStrategy *gr = new Greedy (vcs);
 
 	cout << "bsg" << endl;
-    BSG *bsg= new BSG(vcs,*gr, 4);
+    BSG *bsg= new BSG(vcs,*gr, config.beam_width, 0.0, config.max_level_size);
 
-    //bsg->set_shuffle_best_path(true);
+	cout << "bsg_vcs_mcts" << endl;
+    BSG_VCS_MCTS *bsg_mcts = new BSG_VCS_MCTS(vcs,*gr, config);
 
-	cout << "double effort" << endl;
-    SearchStrategy *de= new DoubleEffort(*bsg);
+    struct SolverOutcome {
+        string name;
+        SearchStrategy* wrapper;
+        State* state_clone;
+        double fill_rate;
+        double runtime;
+        size_t nodes_explored;
+        const State* best_state;
+        MCTSResult mcts_report;
+        bool has_mcts;
+    };
 
-	cout << "copying state" << endl;
-	State& s_copy= *s0->clone();
+    auto execute_solver = [&](SearchStrategy& base_solver, State* clone, const string& name)->SolverOutcome {
+        SolverOutcome outcome;
+        outcome.name = name;
+        outcome.wrapper = new DoubleEffort(base_solver);
+        outcome.state_clone = clone;
+        clock_t solver_start = clock();
+        outcome.fill_rate = outcome.wrapper->run(*clone, maxtime, solver_start);
+        outcome.runtime = outcome.wrapper->get_time();
+        outcome.best_state = outcome.wrapper->get_best_state();
+        outcome.nodes_explored = 0;
+        outcome.has_mcts = false;
 
-   // cout << s0.valid_blocks.size() << endl;
+        BSG* base_bsg = dynamic_cast<BSG*>(&base_solver);
+        if(base_bsg) outcome.nodes_explored = base_bsg->get_nodes_explored();
+        BSG_VCS_MCTS* base_mcts = dynamic_cast<BSG_VCS_MCTS*>(&base_solver);
+        if(base_mcts){
+            outcome.nodes_explored = base_mcts->get_nodes_explored();
+            outcome.mcts_report = base_mcts->get_last_mcts_report();
+            outcome.has_mcts = true;
+        }
+        return outcome;
+    };
 
-	cout << "running" << endl;
+    SolverOutcome outcome;
+    SolverOutcome outcome_compare;
 
-    double eval=de->run(s_copy, maxtime, begin_time) ;
+    if(mode == "bsg_vcs"){
+        outcome = execute_solver(*bsg, s0->clone(), "BSG_VCS");
+        cout << "% volume utilization" << endl;
+        cout << outcome.fill_rate * 100 << endl;
+        cout << "blocks placed: " << (outcome.best_state ? outcome.best_state->get_path().size() : 0) << endl;
+        cout << "nodes explored: " << outcome.nodes_explored << endl;
+        cout << "runtime: " << outcome.runtime << " sec" << endl;
+    } else if(mode == "bsg_vcs_mcts"){
+        outcome = execute_solver(*bsg_mcts, s0->clone(), "BSG_VCS_MCTS");
+        cout << "% volume utilization" << endl;
+        cout << outcome.fill_rate * 100 << endl;
+        cout << "blocks placed: " << (outcome.best_state ? outcome.best_state->get_path().size() : 0) << endl;
+        cout << "nodes explored: " << outcome.nodes_explored << endl;
+        cout << "runtime: " << outcome.runtime << " sec" << endl;
+        cout << "mcts iterations: " << outcome.mcts_report.iterations << endl;
+        cout << "mcts avg depth: " << outcome.mcts_report.average_depth << endl;
+        cout << "mcts max depth: " << outcome.mcts_report.max_depth << endl;
+    } else if(mode == "compare"){
+        SolverOutcome bsg_out = execute_solver(*bsg, s0->clone(), "BSG_VCS");
+        SolverOutcome mcts_out = execute_solver(*bsg_mcts, s0->clone(), "BSG_VCS_MCTS");
 
-    cout << "% volume utilization" << endl;
-	cout << eval*100 << endl;
+        cout << "--------------------------------------------------" << endl;
+        cout << "Algoritmo      Fill %     Tiempo(s)   Nodos" << endl;
+        cout << "--------------------------------------------------" << endl;
+        cout << bsg_out.name << "      " << bsg_out.fill_rate*100 << "      " << bsg_out.runtime << "      " << bsg_out.nodes_explored << endl;
+        cout << mcts_out.name << "      " << mcts_out.fill_rate*100 << "      " << mcts_out.runtime << "      " << mcts_out.nodes_explored << endl;
+        cout << "--------------------------------------------------" << endl;
+        double fill_improvement = bsg_out.fill_rate > 0.0 ? 100.0 * (mcts_out.fill_rate - bsg_out.fill_rate) / bsg_out.fill_rate : 0.0;
+        double runtime_ratio = bsg_out.runtime > 0.0 ? mcts_out.runtime / bsg_out.runtime : 0.0;
+        cout << "Improvement Fill %: " << fill_improvement << "" << endl;
+        cout << "Runtime Ratio: " << runtime_ratio << endl;
+        outcome = mcts_out;
+        outcome_compare = bsg_out;
+    } else {
+        cout << "Unknown mode: " << mode << ". Use bsg_vcs, bsg_vcs_mcts or compare." << endl;
+        return 1;
+    }
+
+    SearchStrategy* de = outcome.wrapper;
+    State& s_copy = *outcome.state_clone;
+
+    if(mode == "compare"){
+        // If compare, we keep the last run state for verbose, using the MCTS outcome.
+        de = outcome.wrapper;
+    }
 	// << " " << de->get_best_state()->get_value2() << " " << eval*de->get_best_state()->get_value2() << endl;
 
 
@@ -224,7 +319,7 @@ int main(int argc, char** argv){
 			   cout << "[" <<  b.first->get_id() << "," << load << "]";
 			}
 		}
-		cout << "], \"utilization\" : " << eval << "}"<<endl;
+cout << "], \"utilization\" : " << dynamic_cast<const clpState*>(de->get_best_state())->get_value() << "}"<<endl;
 	}
 
 
