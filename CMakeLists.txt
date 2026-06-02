@@ -30,6 +30,14 @@ add_library(bsg
   metasolver/strategies/Greedy.cpp
 )
 
+add_library(vns
+  metasolver/LocalSearch.cpp
+  metasolver/VNS.cpp
+  metasolver/strategies/RemoveReinsertOperator.cpp
+  metasolver/strategies/BlockSwapOperator.cpp
+  metasolver/strategies/BlockRotateOperator.cpp
+)
+
 add_library(clp
   problems/clp/containers/AABBContainer.cpp
   problems/clp/containers/AABBTree.cpp
@@ -55,6 +63,7 @@ target_link_libraries(BSG_CLP
   clp_state
   clp
   bsg
+  vns
   BulletDynamics
   BulletCollision
   LinearMath

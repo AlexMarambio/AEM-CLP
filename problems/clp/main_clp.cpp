@@ -17,6 +17,10 @@
 #include "DoubleEffort.h"
 #include "GlobalVariables.h"
 #include "BSG.h"
+#include "VNS.h"
+#include "RemoveReinsertOperator.h"
+#include "BlockSwapOperator.h"
+#include "BlockRotateOperator.h"
 
 bool global::TRACE = false;
 
@@ -49,6 +53,7 @@ int main(int argc, char** argv){
 
 	args::Flag fsb(parser, "fsb", "full-support blocks", {"fsb"});
 	args::Flag trace(parser, "trace", "Trace", {"trace"});
+	args::ValueFlag<string> _strategy(parser, "string", "Strategy: (bsg, vns)", {"strategy"});
 	args::Positional<std::string> _file(parser, "instance-set", "The name of the instance set");
 
 	cout.precision(8);
@@ -148,6 +153,27 @@ int main(int argc, char** argv){
 	cout << "double effort" << endl;
     SearchStrategy *de= new DoubleEffort(*bsg);
 
+	// Seleccionar estrategia (por defecto: DoubleEffort/BSG)
+	string strategy = (_strategy) ? _strategy.Get() : "bsg";
+	SearchStrategy *final_strategy = de;
+	
+	if (strategy == "vns") {
+		cout << "Creating VNS strategy with 3 operators..." << endl;
+		VNS* vns = new VNS(vcs, 0.3, 5);  // max_perturbation=0.3, vnd_iterations=5
+		
+		// Registrar los tres operadores de vecindario
+		RemoveReinsertOperator* op1 = new RemoveReinsertOperator(vcs);
+		BlockSwapOperator* op2 = new BlockSwapOperator(vcs);
+		BlockRotateOperator* op3 = new BlockRotateOperator(vcs);
+		
+		vns->addNeighborhoodOperator(op1);
+		vns->addNeighborhoodOperator(op2);
+		vns->addNeighborhoodOperator(op3);
+		
+		final_strategy = vns;
+		cout << "VNS strategy created with " << vns->getNumberOfOperators() << " operators" << endl;
+	}
+
 	cout << "copying state" << endl;
 	State& s_copy= *s0->clone();
 
@@ -155,7 +181,7 @@ int main(int argc, char** argv){
 
 	cout << "running" << endl;
 
-    double eval=de->run(s_copy, maxtime, begin_time) ;
+    double eval = final_strategy->run(s_copy, maxtime, begin_time) ;
 
     cout << "% volume utilization" << endl;
 	cout << eval*100 << endl;
@@ -163,7 +189,7 @@ int main(int argc, char** argv){
 
 
   if(_verbose || _verbose2){
-	list<const Action*>& actions= dynamic_cast<const clpState*>(de->get_best_state())->get_path();
+	list<const Action*>& actions= dynamic_cast<const clpState*>(final_strategy->get_best_state())->get_path();
 	
 	clpState* s00 = dynamic_cast<clpState*> (s0->clone());
 	for (const Block* block:s00->valid_blocks){
