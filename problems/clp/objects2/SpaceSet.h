@@ -41,7 +41,10 @@ public:
 			// no-op
 		}
 		if(cont.getX()==587 && cont.getY()==233 && cont.getZ()==220){
-			cerr << "Copy SpaceSet this=" << this << " source_addr=" << &a << " source_size=" << a.size() << "\n";
+			cerr << "Copy SpaceSet this=" << this << " source_addr=" << &a << " source_size=" << a.size();
+			const SpaceSet* ss = dynamic_cast<const SpaceSet*>(&a);
+			if(ss) cerr << " derived_data_size=" << ss->data.size();
+			cerr << "\n";
 		}
 		if(a.size()>0){
 			const Space* obj=&a.top();

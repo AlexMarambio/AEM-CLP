@@ -24,23 +24,18 @@ namespace clp {
 void clpState::get_actions(list< Action* >& actions) const{
 	list<const Block*>::const_iterator it;
 
-    const Space* sp=NULL;
+    if(!cont || !cont->spaces) return;
 
-    //cout << valid_blocks.size() << endl;
+    SpaceSet temp_spaces(*cont->spaces, *cont);
+    while(temp_spaces.size()>0 && actions.empty()){
+        const Space& sp = temp_spaces.top();
+		for(it = valid_blocks.begin(); it!=valid_blocks.end(); it++){
+			if(**it <= sp.getDimensions() && cont->getOccupiedVolume() + (*it)->getOccupiedVolume() <= cont->getVolume())
+				actions.push_back(new clpAction(**it, sp));
+		}
 
-	while(cont->spaces->size()>0 && actions.size()==0){
-
-
-	    sp=&cont->spaces->top();
-	    //cout << "spaces:" << cont->spaces->size() << endl;
-
-		for(it = valid_blocks.begin();it!=valid_blocks.end();it++)
-			if(**it <= sp->getDimensions()) actions.push_back(new clpAction(**it,*sp));
-
-		//the space is removed
-		if(actions.size()==0){
-			//cout << "to delete: " << *sp << ";" << sp << endl;
-			cont->spaces->pop();
+		if(actions.empty()){
+			temp_spaces.pop();
 		}
 	}
 }

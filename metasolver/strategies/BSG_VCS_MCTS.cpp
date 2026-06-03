@@ -17,7 +17,7 @@ BSG_VCS_MCTS::~BSG_VCS_MCTS(){
 list<State*> BSG_VCS_MCTS::next(list<State*>& S){
     if(S.empty()) return S;
 
-    map<double, pair<State*, State*> > state_actions;
+    map<double, pair<State*, Action*> > state_actions;
 
     int i = 0;
     for(list<State*>::iterator itS=S.begin(); itS!=S.end() && get_time()<=timelimit; itS++, i++){
@@ -50,23 +50,27 @@ list<State*> BSG_VCS_MCTS::next(list<State*>& S){
         for(int index = 0; index < top_count; index++){
             Action* action = best_actions_vector[index];
             State* state_copy = state.clone();
-            state_copy->transition(*action);
 
-            double value = greedy.run(*state_copy, timelimit, begin_time);
-            if(value > get_best_value()){
-                if(best_state) delete best_state;
-                best_state = state_copy->clone();
-                cout << "[BSG_VCS_MCTS] new best_solution_found ("<< get_time() <<"): " << value << " "
-                     << best_state->get_path().size() << " nodes" << endl;
+            try {
+                state_copy->transition(*action);
+                double value = greedy.run(*state_copy, timelimit, begin_time);
+                if(value > get_best_value()){
+                    if(best_state) delete best_state;
+                    best_state = state_copy->clone();
+                    cout << "[BSG_VCS_MCTS] new best_solution_found ("<< get_time() <<"): " << value << " "
+                         << best_state->get_path().size() << " nodes" << endl;
+                }
+
+                double score = (index < result.action_scores.size()) ? result.action_scores[index] : value;
+                double key = -score;
+                if(state_actions.find(key) == state_actions.end()){
+                    state_actions[key] = std::make_pair(&state, action->clone());
+                }
+            } catch (const std::exception& e) {
+                // Skip invalid candidate transitions or greedy continuations
             }
 
-            double score = (index < result.action_scores.size()) ? result.action_scores[index] : value;
-            double key = -score;
-            if(state_actions.find(key) == state_actions.end()){
-                state_actions[key] = std::make_pair(&state, state_copy);
-            } else {
-                delete state_copy;
-            }
+            delete state_copy;
         }
 
         for(int index = 0; index < (int)best_actions_vector.size(); index++){
@@ -76,28 +80,23 @@ list<State*> BSG_VCS_MCTS::next(list<State*>& S){
     }
 
     list<State*> nextS;
-    int k = 0;
     for(auto it = state_actions.begin(); it != state_actions.end(); ++it){
         State* s = it->second.first;
-        State* final_state = it->second.second;
-        Action* a = (s)? s->next_action(*final_state):NULL;
+        Action* a = it->second.second;
 
-        if(nextS.size() < (size_t) config.beam_width && a){
+        if(nextS.size() < (size_t) config.beam_width && s && a){
             State* p = s;
-            s = s->clone();
-            it->second.first = s;
-            s->transition(*a);
-            nextS.push_back(s);
-            p->add_children(s);
-        } else if(s){
-            it->second.first = NULL;
+            State* child = s->clone();
+            try {
+                child->transition(*a);
+                nextS.push_back(child);
+                p->add_children(child);
+            } catch (const std::exception& e) {
+                delete child;
+            }
         }
 
-        if(k >= config.beam_width){
-            delete final_state;
-        }
-        if(a) delete a;
-        k++;
+        delete a;
     }
 
     return nextS;

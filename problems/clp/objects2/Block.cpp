@@ -8,6 +8,7 @@
 #include "Block.h"
 
 #include <iostream>
+#include <stdexcept>
 
 
 using namespace std;
@@ -63,12 +64,11 @@ void Block::insert(const Block& block, const Vector3& point, const Vector3 min_d
        point.getX() + block.getL() > getL() ||
        point.getY() + block.getW() > getW() ||
        point.getZ() + block.getH() > getH()){
-        cerr << "Invalid block placement: point=" << point << " block=" << block.getL() << "," << block.getW() << "," << block.getH() << " cont=" << getL() << "," << getW() << "," << getH() << "\n";
+        throw std::runtime_error("Invalid block placement");
     }
 
     if(occupied_volume > getVolume()){
-        cerr << "Overflow in container after insert: occupied=" << occupied_volume << " volume=" << getVolume() << "\n";
-        abort();
+        throw std::runtime_error("Overflow in container after insert");
     }
 
 	AABB b(point, &block);
@@ -100,7 +100,7 @@ void Block::insert(const Block& block, const Vector3& point, const Vector3 min_d
             cerr << " existing=" << o->getXmin() << "," << o->getYmin() << "," << o->getZmin() << " - "
                  << o->getXmax() << "," << o->getYmax() << "," << o->getZmax() << "\n";
         }
-        abort();
+        throw std::runtime_error("Overlap detected in insert");
     }
 
     spaces->crop_volume(b,*this, min_dim);
