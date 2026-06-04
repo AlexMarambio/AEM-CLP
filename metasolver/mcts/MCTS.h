@@ -7,6 +7,7 @@
 #include "../State.h"
 #include "../SolverConfig.h"
 #include "MCTSNode.h"
+#include "MCTSStats.h"
 
 namespace clp {
 class AABB;
@@ -25,11 +26,16 @@ struct MCTSResult {
     double total_simulation_time;
     double average_reward;
     double max_reward;
+    int global_stats_size;
+    int global_stats_updates;
+    double global_average_reward;
+    int global_score_hits;
+    double average_global_score;
 };
 
 class MCTS {
 public:
-    MCTS(ActionEvaluator* evaluator, const SolverConfig& config);
+    MCTS(ActionEvaluator* evaluator, const SolverConfig& config, MCTSStats* global_stats = nullptr);
     virtual ~MCTS();
 
     MCTSResult search_candidates(const State& root_state, const std::vector<Action*>& initial_actions);
@@ -39,6 +45,7 @@ private:
     MCTSNode* expand(MCTSNode* node);
     double default_policy(MCTSNode* node);
     void backpropagate(MCTSNode* node, double reward);
+    void fill_global_stats_report(MCTSResult& report) const;
     std::vector<Action*> get_best_actions(const State& state, int n);
     void initialize_untried_actions(MCTSNode* node);
     bool is_terminal(const State& state, int depth) const;
@@ -54,6 +61,7 @@ private:
 private:
     ActionEvaluator* evaluator;
     SolverConfig config;
+    MCTSStats* global_stats;
     int nodes_explored;
     int rollout_depth;
 };

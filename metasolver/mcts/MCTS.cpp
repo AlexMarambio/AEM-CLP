@@ -5,6 +5,7 @@
 #include <algorithm>
 #include <iostream>
 
+#include "DecisionKey.h"
 #include "../../problems/clp/clpState.h"
 #include "../../problems/clp/objects2/AABB.h"
 #include "../../problems/clp/objects2/Block.h"
@@ -13,8 +14,8 @@
 
 namespace metasolver {
 
-MCTS::MCTS(ActionEvaluator* evaluator, const SolverConfig& config) :
-    evaluator(evaluator), config(config), nodes_explored(0) {
+MCTS::MCTS(ActionEvaluator* evaluator, const SolverConfig& config, MCTSStats* global_stats) :
+    evaluator(evaluator), config(config), global_stats(global_stats), nodes_explored(0) {
 }
 
 MCTS::~MCTS() {
@@ -30,6 +31,9 @@ MCTSResult MCTS::search_candidates(const State& root_state, const std::vector<Ac
     report.total_simulation_time = 0.0;
     report.average_reward = 0.0;
     report.max_reward = 0.0;
+    report.global_score_hits = 0;
+    report.average_global_score = 0.0;
+    fill_global_stats_report(report);
 
     MCTSNode* root = new MCTSNode(root_state.clone(), nullptr, nullptr, 0);
     root->terminal = false;
@@ -49,6 +53,7 @@ MCTSResult MCTS::search_candidates(const State& root_state, const std::vector<Ac
         report.action_scores.clear();
         report.iterations = 0;
         report.nodes_explored = nodes_explored;
+        fill_global_stats_report(report);
         delete root;
         return report;
     }
@@ -83,15 +88,36 @@ MCTSResult MCTS::search_candidates(const State& root_state, const std::vector<Ac
     report.total_simulation_time = double(clock() - begin) / double(CLOCKS_PER_SEC);
     report.average_reward = simulation_count > 0 ? total_reward / double(simulation_count) : 0.0;
     report.max_reward = max_reward < -1e8 ? 0.0 : max_reward;
+    fill_global_stats_report(report);
 
     report.action_scores.reserve(root->children.size());
+    double global_score_sum = 0.0;
     for(MCTSNode* child : root->children){
+        double local_score = 0.0;
         if(child->visits > 0){
-            report.action_scores.push_back(child->total_value / double(child->visits));
+            local_score = child->total_value / double(child->visits);
         } else {
-            report.action_scores.push_back(compute_reward(*child->state));
+            local_score = compute_reward(*child->state);
         }
+
+        double score = local_score;
+        if(global_stats && child->action && config.mcts_global_score_weight > 0.0){
+            MCTSActionStats stats;
+            std::string key = make_decision_key(*root->state, *child->action);
+            if(global_stats->find(key, stats) && stats.visits >= config.mcts_min_global_visits){
+                double global_score = stats.total_reward / double(stats.visits);
+                double weight = std::max(0.0, std::min(1.0, config.mcts_global_score_weight));
+                score = (1.0 - weight) * local_score + weight * global_score;
+                report.global_score_hits++;
+                global_score_sum += global_score;
+            }
+        }
+
+        report.action_scores.push_back(score);
     }
+    report.average_global_score = report.global_score_hits > 0
+        ? global_score_sum / double(report.global_score_hits)
+        : 0.0;
 
     delete root;
     return report;
@@ -152,7 +178,22 @@ void MCTS::backpropagate(MCTSNode* node, double reward){
     while(node != nullptr){
         node->visits++;
         node->total_value += reward;
+        if(global_stats && node->parent && node->action){
+            global_stats->update(make_decision_key(*node->parent->state, *node->action), reward);
+        }
         node = node->parent;
+    }
+}
+
+void MCTS::fill_global_stats_report(MCTSResult& report) const{
+    if(global_stats){
+        report.global_stats_size = global_stats->size();
+        report.global_stats_updates = global_stats->total_updates();
+        report.global_average_reward = global_stats->average_reward();
+    } else {
+        report.global_stats_size = 0;
+        report.global_stats_updates = 0;
+        report.global_average_reward = 0.0;
     }
 }
 
