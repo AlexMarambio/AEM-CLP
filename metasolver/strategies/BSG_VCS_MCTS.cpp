@@ -43,7 +43,7 @@ list<State*> BSG_VCS_MCTS::next(list<State*>& S){
             candidate_actions.push_back(best_actions_vector[index]->clone());
         }
 
-        MCTS mcts(evl, config);
+        MCTS mcts(evl, config, &mcts_stats);
         MCTSResult result = mcts.search_candidates(state, candidate_actions);
         last_mcts_report = result;
 

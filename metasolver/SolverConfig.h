@@ -16,6 +16,8 @@ struct SolverConfig {
     double reward_weight_compactness;
     double reward_weight_contact_surface;
     double reward_weight_fragmentation;
+    double mcts_global_score_weight;
+    int mcts_min_global_visits;
 
     SolverConfig() :
         beam_width(4),
@@ -29,7 +31,9 @@ struct SolverConfig {
         reward_weight_fill_rate(1.0),
         reward_weight_compactness(0.5),
         reward_weight_contact_surface(0.5),
-        reward_weight_fragmentation(0.5)
+        reward_weight_fragmentation(0.5),
+        mcts_global_score_weight(0.25),
+        mcts_min_global_visits(2)
     {}
 };
 

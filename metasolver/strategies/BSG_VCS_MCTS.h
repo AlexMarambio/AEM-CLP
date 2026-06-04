@@ -4,6 +4,7 @@
 #include "BSG.h"
 #include "../SolverConfig.h"
 #include "../mcts/MCTS.h"
+#include "../mcts/MCTSStats.h"
 
 namespace metasolver {
 
@@ -25,6 +26,7 @@ private:
     SolverConfig config;
     size_t nodes_explored;
     MCTSResult last_mcts_report;
+    MCTSStats mcts_stats;
 };
 
 } /* namespace metasolver */
