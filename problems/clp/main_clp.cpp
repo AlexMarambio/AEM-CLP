@@ -58,6 +58,8 @@ int main(int argc, char** argv){
 	args::ValueFlag<double> _reward_compact(parser, "double", "Reward weight compactness", {"reward_compactness"});
 	args::ValueFlag<double> _reward_contact(parser, "double", "Reward weight contact surface", {"reward_contact_surface"});
 	args::ValueFlag<double> _reward_fragmentation(parser, "double", "Reward weight fragmentation", {"reward_fragmentation"});
+	args::ValueFlag<double> _mcts_global_weight(parser, "double", "Weight of global MCTS memory in action scores", {"mcts_global_score_weight"});
+	args::ValueFlag<int> _mcts_min_global_visits(parser, "int", "Minimum global visits before using an action memory score", {"mcts_min_global_visits"});
 	args::Flag _json(parser, "double", "json output tuple: (loaded, remaining, utilization)", {"json"});
 	args::Flag _verbose(parser, "layout", "Show the actions to reach the solution", {"verbose"});
 	args::ValueFlag<int> _verbose2(parser, "layout", "Show the actions to reach the solution (v2). Should be indicated the number of actions per state", {"verbose2"});
@@ -134,6 +136,8 @@ if(_reward_fill) config.reward_weight_fill_rate = _reward_fill.Get();
 if(_reward_compact) config.reward_weight_compactness = _reward_compact.Get();
 if(_reward_contact) config.reward_weight_contact_surface = _reward_contact.Get();
 if(_reward_fragmentation) config.reward_weight_fragmentation = _reward_fragmentation.Get();
+if(_mcts_global_weight) config.mcts_global_score_weight = _mcts_global_weight.Get();
+if(_mcts_min_global_visits) config.mcts_min_global_visits = _mcts_min_global_visits.Get();
 
 	cout << "File("<< format <<"): " << file << endl;
 	cout << "Instance:" << inst+1 << endl;
@@ -226,6 +230,11 @@ if(_reward_fragmentation) config.reward_weight_fragmentation = _reward_fragmenta
         cout << "mcts iterations: " << outcome.mcts_report.iterations << endl;
         cout << "mcts avg depth: " << outcome.mcts_report.average_depth << endl;
         cout << "mcts max depth: " << outcome.mcts_report.max_depth << endl;
+        cout << "mcts global stats: " << outcome.mcts_report.global_stats_size << endl;
+        cout << "mcts global updates: " << outcome.mcts_report.global_stats_updates << endl;
+        cout << "mcts global avg reward: " << outcome.mcts_report.global_average_reward << endl;
+        cout << "mcts global score hits: " << outcome.mcts_report.global_score_hits << endl;
+        cout << "mcts avg global score used: " << outcome.mcts_report.average_global_score << endl;
     } else if(mode == "compare"){
         SolverOutcome bsg_out = execute_solver(*bsg, s0->clone(), "BSG_VCS");
         SolverOutcome mcts_out = execute_solver(*bsg_mcts, s0->clone(), "BSG_VCS_MCTS");
@@ -240,6 +249,13 @@ if(_reward_fragmentation) config.reward_weight_fragmentation = _reward_fragmenta
         double runtime_ratio = bsg_out.runtime > 0.0 ? mcts_out.runtime / bsg_out.runtime : 0.0;
         cout << "Improvement Fill %: " << fill_improvement << "" << endl;
         cout << "Runtime Ratio: " << runtime_ratio << endl;
+        if(mcts_out.has_mcts){
+            cout << "MCTS global stats: " << mcts_out.mcts_report.global_stats_size << endl;
+            cout << "MCTS global updates: " << mcts_out.mcts_report.global_stats_updates << endl;
+            cout << "MCTS global avg reward: " << mcts_out.mcts_report.global_average_reward << endl;
+            cout << "MCTS global score hits: " << mcts_out.mcts_report.global_score_hits << endl;
+            cout << "MCTS avg global score used: " << mcts_out.mcts_report.average_global_score << endl;
+        }
         outcome = mcts_out;
         outcome_compare = bsg_out;
     } else {
