@@ -14,7 +14,6 @@
 #include "VCS_Function.h"
 #include "SpaceSet.h"
 #include "Greedy.h"
-#include "DoubleEffort.h"
 #include "GlobalVariables.h"
 #include "BSG.h"
 
@@ -140,13 +139,10 @@ int main(int argc, char** argv){
 	cout << "greedy" << endl;
     SearchStrategy *gr = new Greedy (vcs);
 
-	cout << "bsg" << endl;
+	cout << "bss" << endl;
     BSG *bsg= new BSG(vcs,*gr, 4);
 
     //bsg->set_shuffle_best_path(true);
-
-	cout << "double effort" << endl;
-    SearchStrategy *de= new DoubleEffort(*bsg);
 
 	cout << "copying state" << endl;
 	State& s_copy= *s0->clone();
@@ -155,7 +151,7 @@ int main(int argc, char** argv){
 
 	cout << "running" << endl;
 
-    double eval=de->run(s_copy, maxtime, begin_time) ;
+    double eval=bsg->run(s_copy, maxtime, begin_time) ;
 
     cout << "% volume utilization" << endl;
 	cout << eval*100 << endl;
@@ -163,7 +159,7 @@ int main(int argc, char** argv){
 
 
   if(_verbose || _verbose2){
-	list<const Action*>& actions= dynamic_cast<const clpState*>(de->get_best_state())->get_path();
+	list<const Action*>& actions= dynamic_cast<const clpState*>(bsg->get_best_state())->get_path();
 	
 	clpState* s00 = dynamic_cast<clpState*> (s0->clone());
 	for (const Block* block:s00->valid_blocks){
@@ -211,13 +207,13 @@ int main(int argc, char** argv){
    if(_json){
 	   	bool first;
 		cout << "{\"remaining\" :["; first=true;
-		for(auto b:dynamic_cast<const clpState*>(de->get_best_state())->nb_left_boxes)
+		for(auto b:dynamic_cast<const clpState*>(bsg->get_best_state())->nb_left_boxes)
 		    if(b.second > 0){
 			   if(first)  first=false; else cout << "," ;
 			   cout << "[" << b.first->get_id() << "," << b.second << "]";
 			}
 		cout << "], \"loaded\" :["; first=true;
-		for(auto b:dynamic_cast<const clpState*>(de->get_best_state())->nb_left_boxes){
+		for(auto b:dynamic_cast<const clpState*>(bsg->get_best_state())->nb_left_boxes){
 			int load = s0->nb_left_boxes[b.first] -b.second;
 			if(load>0){
 			   if(first)  first=false; else cout << "," ;
