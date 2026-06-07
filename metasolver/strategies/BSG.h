@@ -15,8 +15,12 @@ namespace metasolver {
 
 
 /**
- * Variante del beam search que utiliza una lista the best_path
- * para guiarse en la busqueda
+ * Beam Stack Search sobre la interfaz clasica de BSG.
+ *
+ * La evaluacion de acciones sigue delegada en ActionEvaluator (VCS en CLP) y
+ * la estimacion de una solucion completa sigue delegada en la estrategia greedy.
+ * La diferencia con beam search clasico es que los candidatos podados por el
+ * ancho de beam se guardan en una pila para retomarlos mediante backtracking.
  */
 class BSG : public SearchStrategy {
 public:
@@ -44,28 +48,8 @@ public:
 	 * Initialize the variables of the specific strategy
 	 */
 	virtual void initialize (State* s=NULL){
-	    if(!s){
-	    	if(best_state) {delete best_state; best_state=NULL;}
-
-	    	map<double, pair<State*, State*> >::iterator state_action=state_actions.begin();
-	    	for(int i=0; state_action!=state_actions.end();i++) {
-	    		delete state_action->second.second;
-	    		state_action=state_actions.erase(state_action);
-	    	}
-	    	return;
-	    }
-	    //The states of the first n_elite elements are modified by a first state
-	    map<double, pair<State*, State*> >::iterator state_action=state_actions.begin();
-
-        for(int i=0; state_action!=state_actions.end();i++){
-           	if(i>=n_elite){
-        	    delete state_action->second.second;
-                state_action=state_actions.erase(state_action);
-        	}else{
-        	    state_action->second.first = s;
-        	    if(shuffle_best_path) state_action->second.second->shuffle_path();
-        	}
-        }
+		clear_beam_stack();
+		if(best_state) {delete best_state; best_state=NULL;}
 	}
 
 	/**
@@ -102,49 +86,29 @@ public:
 
 protected:
 
-	template<class map_container>
-	list<State*> get_next_states(map_container& sorted_states){
-		list<State*> nextS;
-		typename map_container::iterator state_action=sorted_states.begin();
+	struct Candidate {
+		Candidate(double value, State* base_state, State* final_state) :
+			value(value), base_state(base_state), final_state(final_state) { }
 
-		//Para cada state->final_state se rescata la accion
-		//Si no hay acción posible o si la cuota the beams ha sido sobrepasada
-		//se elimina final_state y el elemento del mapa
-		int k=0;
-		//cout << "filtered_states" << endl;
-		while(state_action!=sorted_states.end()){
-			State* s= state_action->second.first;
-			State* final_state=state_action->second.second;
-			Action* a = (s)? s->next_action(*final_state):NULL;
+		double value;
+		State* base_state;
+		State* final_state;
+	};
 
-			if(nextS.size()<beams && a){
-				State* p=s;
-				s=s->clone();
-				state_action->second.first=s;
-				s->transition(*a);
-				nextS.push_back(s);
-				p->add_children(s);
+	struct BeamFrame {
+		list<Candidate*> deferred;
+	};
 
-		 		//cout <<  state_action->second.first->get_value() << " --> " << state_action->second.second->get_value()  << endl;
+	typedef multimap<double, Candidate*> CandidateMap;
 
+	State* promote_candidate(Candidate* candidate);
+	list<State*> resume_from_beam_stack();
+	void save_deferred_candidates(CandidateMap& ranked_candidates, CandidateMap::iterator first);
+	void delete_candidate(Candidate* candidate);
+	void clear_candidates(list<Candidate*>& candidates);
+	void clear_beam_stack();
 
-			}else state_action->second.first=NULL;
-
-			//other elements are removed from the state_actions
-			 if(k>=beams){
-				delete final_state;
-			   state_action=sorted_states.erase(state_action);
-			 }else state_action++;
-
-		 if(a) delete a;
-		 k++;
-		}
-
-		return nextS;
-
-	}
-
-	map<double, pair<State*, State*> > state_actions;
+	list<BeamFrame> beam_stack;
 
 	SearchStrategy& greedy;
 
