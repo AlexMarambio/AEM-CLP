@@ -42,6 +42,15 @@ int main(int argc, char** argv){
 	args::ValueFlag<double> _gamma(parser, "double", "Gamma parameter", {"gamma"});
 	args::ValueFlag<double> _delta(parser, "double", "Delta parameter", {"delta"});
 	args::ValueFlag<double> _p(parser, "double", "p parameter", {'p'});
+	args::Flag _mcts(parser, "mcts", "Enable MCTS reranking over VCS candidates", {"mcts"});
+	args::ValueFlag<int> _mcts_iter(parser, "int", "MCTS iterations per expanded state", {"mcts_iter"});
+	args::ValueFlag<int> _mcts_top(parser, "int", "Number of VCS candidates reranked by MCTS (0 means all)", {"mcts_top"});
+	args::ValueFlag<int> _mcts_depth(parser, "int", "MCTS rollout depth before optional greedy completion", {"mcts_depth"});
+	args::ValueFlag<int> _mcts_width(parser, "int", "Number of VCS actions considered at each rollout step", {"mcts_width"});
+	args::ValueFlag<double> _mcts_c(parser, "double", "MCTS UCB exploration constant", {"mcts_c"});
+	args::ValueFlag<double> _mcts_vcs_weight(parser, "double", "Weight of original VCS order in MCTS reranking", {"mcts_vcs_weight"});
+	args::ValueFlag<double> _mcts_weight(parser, "double", "Weight of MCTS average reward in reranking", {"mcts_weight"});
+	args::Flag _mcts_no_greedy(parser, "mcts_no_greedy", "Disable greedy completion after each MCTS rollout", {"mcts_no_greedy"});
 	args::Flag _json(parser, "double", "json output tuple: (loaded, remaining, utilization)", {"json"});
 	args::Flag _verbose(parser, "layout", "Show the actions to reach the solution", {"verbose"});
 	args::ValueFlag<int> _verbose2(parser, "layout", "Show the actions to reach the solution (v2). Should be indicated the number of actions per state", {"verbose2"});
@@ -139,8 +148,33 @@ int main(int argc, char** argv){
 	cout << "greedy" << endl;
     SearchStrategy *gr = new Greedy (vcs);
 
+	MCTSGreedy::Params mcts_params;
+	mcts_params.enabled = _mcts;
+	mcts_params.iterations = (_mcts_iter)? _mcts_iter.Get():50;
+	mcts_params.top_candidates = (_mcts_top)? _mcts_top.Get():0;
+	mcts_params.rollout_depth = (_mcts_depth)? _mcts_depth.Get():10;
+	mcts_params.rollout_width = (_mcts_width)? _mcts_width.Get():3;
+	mcts_params.exploration = (_mcts_c)? _mcts_c.Get():1.4;
+	mcts_params.vcs_weight = (_mcts_vcs_weight)? _mcts_vcs_weight.Get():0.0;
+	mcts_params.mcts_weight = (_mcts_weight)? _mcts_weight.Get():1.0;
+	mcts_params.complete_with_greedy = !_mcts_no_greedy;
+
+	if(mcts_params.enabled){
+		cout << "mcts: iter=" << mcts_params.iterations
+			 << " top=" << mcts_params.top_candidates
+			 << " depth=" << mcts_params.rollout_depth
+			 << " width=" << mcts_params.rollout_width
+			 << " c=" << mcts_params.exploration
+			 << " vcs_weight=" << mcts_params.vcs_weight
+			 << " mcts_weight=" << mcts_params.mcts_weight
+			 << " complete_with_greedy=" << mcts_params.complete_with_greedy
+			 << endl;
+	}else{
+		cout << "mcts: off" << endl;
+	}
+
 	cout << "bss" << endl;
-    BSG *bsg= new BSG(vcs,*gr, 4);
+    BSG *bsg= new BSG(vcs,*gr, 4, 0.0, 0, false, mcts_params);
 
     //bsg->set_shuffle_best_path(true);
 

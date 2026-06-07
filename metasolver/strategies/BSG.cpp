@@ -17,6 +17,10 @@ BSG::~BSG(){
 		delete best_state;
 		best_state = NULL;
 	}
+	if(mcts) {
+		delete mcts;
+		mcts = NULL;
+	}
 }
 
 list<State*> BSG::next(list<State*>& S){
@@ -34,6 +38,8 @@ list<State*> BSG::next(list<State*>& S){
 		list< Action* > best_actions;
 		int w =  (double) max_level_size / (double) S.size() + 0.5;
 		get_best_actions(state, best_actions, w);
+		if(mcts)
+			mcts->rerank_candidates(state, best_actions, timelimit, begin_time);
 
 		list< Action* >::iterator it = best_actions.begin();
 		for(; it!=best_actions.end() && get_time()<=timelimit; it++){

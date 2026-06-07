@@ -9,6 +9,7 @@
 #define STRATEGIES_BSG_H_
 
 #include "../SearchStrategy.h"
+#include "MCTSGreedy.h"
 
 namespace metasolver {
 
@@ -32,10 +33,14 @@ public:
 	 * @p_elite the proportion of beams in the elite set (0.0, means 1 beam)
 	 * @max_level_size the maximum number of expanded nodes by level of the tree
 	 */
-	BSG(ActionEvaluator* evl, SearchStrategy& greedy, int beams, double p_elite=0.0, int max_level_size=0, bool plot=false) :
-		SearchStrategy(evl), greedy(greedy), beams(beams),
-		max_level_size((max_level_size==0)? beams*beams:max_level_size),
-		p_elite(p_elite), n_elite(max(1, (int)(p_elite*beams))), shuffle_best_path(false), plot(plot) {}
+		BSG(ActionEvaluator* evl, SearchStrategy& greedy, int beams, double p_elite=0.0, int max_level_size=0, bool plot=false,
+				const MCTSGreedy::Params& mcts_params=MCTSGreedy::Params()) :
+			SearchStrategy(evl), greedy(greedy), beams(beams),
+			max_level_size((max_level_size==0)? beams*beams:max_level_size),
+			p_elite(p_elite), n_elite(max(1, (int)(p_elite*beams))), shuffle_best_path(false), plot(plot),
+			mcts(NULL) {
+				set_mcts_params(mcts_params);
+			}
 
 
 	virtual ~BSG();
@@ -81,10 +86,20 @@ public:
 		return true;
 	}
 
-	void set_beams(int b){beams=b;}
+		void set_beams(int b){beams=b;}
+
+		void set_mcts_params(const MCTSGreedy::Params& params){
+			if(mcts){
+				delete mcts;
+				mcts=NULL;
+			}
+
+			if(params.enabled && params.iterations>0)
+				mcts = new MCTSGreedy(evl, greedy, params);
+		}
 
 
-protected:
+	protected:
 
 	struct Candidate {
 		Candidate(double value, State* base_state, State* final_state) :
@@ -125,11 +140,13 @@ protected:
 	double p_elite;
 	int n_elite;
 
-	bool shuffle_best_path;
+		bool shuffle_best_path;
 
-	bool plot;
+		bool plot;
 
-};
+		MCTSGreedy* mcts;
+
+	};
 
 } /* namespace clp */
 
