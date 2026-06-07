@@ -95,7 +95,7 @@ list<State*> BSG::resume_from_beam_stack(){
 
 	while(!beam_stack.empty() && nextS.empty()){
 		BeamFrame& frame = beam_stack.back();
-
+		//cout << "resuming from beam stack, deferred candidates: " << frame.deferred.size() << endl;
 		while(!frame.deferred.empty() && nextS.size()<beams){
 			Candidate* candidate = frame.deferred.front();
 			frame.deferred.pop_front();
