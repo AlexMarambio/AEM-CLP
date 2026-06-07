@@ -31,6 +31,9 @@ padre:
 
 ```sh
 ./BSG_CLP ../problems/clp/benchs/BR/BR2.txt -i 47 -t 10 -f BR
+
+./BSG_CLP ../problems/clp/benchs/BR/BR2.txt -i 47 -t 10 -f BR --mode compar
+e
 ```
 
 Opciones principales:
