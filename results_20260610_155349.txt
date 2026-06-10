@@ -1,0 +1,1779 @@
+BSG vs BSG+MCTS Comparison Results
+Generated: 2026-06-10 15:53:49
+============================================================
+
+=== Comparison for problems/clp/benchs/BR/BR0.txt  instance 42 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      86.68 |      86.68 |      +0.00
+Wall time (s)                  |       0.08 |       0.76 |      +0.68
+Process elapsed (s)            |       0.12 |       0.80 |      +0.68
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR0.txt  instance 43 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      86.31 |      86.31 |      +0.00
+Wall time (s)                  |       0.58 |       7.18 |      +6.59
+Process elapsed (s)            |       0.59 |       7.19 |      +6.59
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR0.txt  instance 44 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.53 |      93.53 |      +0.00
+Wall time (s)                  |       0.05 |       0.14 |      +0.09
+Process elapsed (s)            |       3.52 |       3.91 |      +0.38
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR0.txt  instance 45 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.69 |      93.69 |      +0.00
+Wall time (s)                  |       0.06 |       0.69 |      +0.63
+Process elapsed (s)            |       0.24 |       0.87 |      +0.63
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR0.txt  instance 46 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      84.50 |      84.50 |      +0.00
+Wall time (s)                  |       0.03 |       0.32 |      +0.29
+Process elapsed (s)            |       0.05 |       0.34 |      +0.29
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR0.txt  instance 47 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      84.40 |      84.40 |      +0.00
+Wall time (s)                  |       0.04 |       0.10 |      +0.06
+Process elapsed (s)            |       1.71 |       1.87 |      +0.15
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+============================================================
+SUMMARY for problems/clp/benchs/BR/BR0.txt  (6 instances)
+============================================================
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Avg final value (%)            |      88.18 |      88.18 |      +0.00
+Avg process time (s)           |       1.04 |       2.50 |      +1.46
+
+=== Comparison for problems/clp/benchs/BR/BR1.txt  instance 42 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.83 |      94.83 |      +0.00
+Wall time (s)                  |       5.91 |      60.04 |     +54.12
+Process elapsed (s)            |       7.91 |      62.10 |     +54.20
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR1.txt  instance 43 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      83.20 |      83.20 |      +0.00
+Wall time (s)                  |       0.43 |       6.44 |      +6.01
+Process elapsed (s)            |       0.48 |       6.49 |      +6.01
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR1.txt  instance 44 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.47 |      94.47 |      +0.00
+Wall time (s)                  |       1.04 |      12.23 |     +11.20
+Process elapsed (s)            |       3.04 |      14.05 |     +11.01
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR1.txt  instance 45 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.13 |      94.13 |      +0.00
+Wall time (s)                  |       0.49 |       6.51 |      +6.02
+Process elapsed (s)            |       0.73 |       6.74 |      +6.01
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR1.txt  instance 46 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      92.61 |      92.61 |      +0.00
+Wall time (s)                  |       4.64 |      60.10 |     +55.46
+Process elapsed (s)            |       5.19 |      60.64 |     +55.45
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR1.txt  instance 47 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.04 |      92.88 |      -0.16
+Wall time (s)                  |      60.19 |      60.32 |      +0.13
+Process elapsed (s)            |      60.86 |      60.90 |      +0.03
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+============================================================
+SUMMARY for problems/clp/benchs/BR/BR1.txt  (6 instances)
+============================================================
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Avg final value (%)            |      92.05 |      92.02 |      -0.03
+Avg process time (s)           |      13.03 |      35.15 |     +22.12
+
+=== Comparison for problems/clp/benchs/BR/BR2.txt  instance 42 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      92.24 |      92.24 |      +0.00
+Wall time (s)                  |      60.13 |      60.07 |      -0.07
+Process elapsed (s)            |      64.32 |      64.32 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR2.txt  instance 43 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      89.44 |      87.32 |      -2.12
+Wall time (s)                  |      60.07 |      60.05 |      -0.02
+Process elapsed (s)            |      60.47 |      60.47 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR2.txt  instance 44 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.68 |      93.68 |      +0.00
+Wall time (s)                  |      60.03 |      60.04 |      +0.02
+Process elapsed (s)            |      62.27 |      62.27 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR2.txt  instance 45 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.47 |      93.47 |      +0.00
+Wall time (s)                  |       1.90 |      22.34 |     +20.44
+Process elapsed (s)            |       3.61 |      23.94 |     +20.33
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR2.txt  instance 46 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.36 |      94.36 |      +0.00
+Wall time (s)                  |      60.04 |      60.03 |      -0.01
+Process elapsed (s)            |      60.44 |      60.46 |      +0.02
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR2.txt  instance 47 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.74 |      94.74 |      +0.00
+Wall time (s)                  |      60.01 |      60.03 |      +0.02
+Process elapsed (s)            |      60.44 |      60.45 |      +0.02
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+============================================================
+SUMMARY for problems/clp/benchs/BR/BR2.txt  (6 instances)
+============================================================
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Avg final value (%)            |      92.99 |      92.64 |      -0.35
+Avg process time (s)           |      51.92 |      55.32 |      +3.39
+
+=== Comparison for problems/clp/benchs/BR/BR3.txt  instance 42 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.86 |      94.86 |      +0.00
+Wall time (s)                  |      60.05 |      60.05 |      -0.01
+Process elapsed (s)            |      60.72 |      60.72 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR3.txt  instance 43 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      90.25 |      90.25 |      +0.00
+Wall time (s)                  |      60.03 |      60.03 |      +0.00
+Process elapsed (s)            |      63.20 |      63.20 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR3.txt  instance 44 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.85 |      93.85 |      +0.00
+Wall time (s)                  |      60.04 |      60.03 |      -0.00
+Process elapsed (s)            |      60.74 |      60.77 |      +0.03
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR3.txt  instance 45 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.85 |      94.39 |      -0.46
+Wall time (s)                  |      60.03 |      60.01 |      -0.02
+Process elapsed (s)            |      60.44 |      60.44 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR3.txt  instance 46 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.06 |      93.06 |      +0.00
+Wall time (s)                  |      60.01 |      60.03 |      +0.01
+Process elapsed (s)            |      60.41 |      60.43 |      +0.01
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR3.txt  instance 47 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.53 |      94.31 |      -0.22
+Wall time (s)                  |      60.03 |      60.05 |      +0.02
+Process elapsed (s)            |      60.49 |      60.51 |      +0.03
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+============================================================
+SUMMARY for problems/clp/benchs/BR/BR3.txt  (6 instances)
+============================================================
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Avg final value (%)            |      93.57 |      93.45 |      -0.11
+Avg process time (s)           |      61.00 |      61.01 |      +0.01
+
+=== Comparison for problems/clp/benchs/BR/BR4.txt  instance 42 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      95.07 |      94.96 |      -0.11
+Wall time (s)                  |      60.02 |      60.01 |      -0.01
+Process elapsed (s)            |      61.65 |      61.65 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR4.txt  instance 43 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.06 |      93.06 |      +0.00
+Wall time (s)                  |      60.02 |      60.02 |      +0.00
+Process elapsed (s)            |      62.18 |      62.18 |      +0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR4.txt  instance 44 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.18 |      94.18 |      +0.00
+Wall time (s)                  |      60.03 |      60.02 |      -0.01
+Process elapsed (s)            |      60.54 |      60.54 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR4.txt  instance 45 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.59 |      94.59 |      +0.00
+Wall time (s)                  |      60.04 |      60.01 |      -0.03
+Process elapsed (s)            |      61.16 |      61.22 |      +0.06
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR4.txt  instance 46 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.93 |      93.93 |      +0.00
+Wall time (s)                  |      60.02 |      60.02 |      -0.00
+Process elapsed (s)            |      60.36 |      60.36 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR4.txt  instance 47 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      96.19 |      96.11 |      -0.08
+Wall time (s)                  |      60.01 |      60.03 |      +0.02
+Process elapsed (s)            |      60.37 |      60.39 |      +0.03
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+============================================================
+SUMMARY for problems/clp/benchs/BR/BR4.txt  (6 instances)
+============================================================
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Avg final value (%)            |      94.50 |      94.47 |      -0.03
+Avg process time (s)           |      61.04 |      61.06 |      +0.01
+
+=== Comparison for problems/clp/benchs/BR/BR5.txt  instance 42 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      91.88 |      91.88 |      +0.00
+Wall time (s)                  |      61.02 |      61.03 |      +0.02
+Process elapsed (s)            |      61.84 |      61.88 |      +0.04
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR5.txt  instance 43 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.64 |      93.64 |      +0.00
+Wall time (s)                  |      60.10 |      60.01 |      -0.09
+Process elapsed (s)            |      60.99 |      60.99 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR5.txt  instance 44 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.79 |      95.39 |      +0.60
+Wall time (s)                  |      60.03 |      60.11 |      +0.08
+Process elapsed (s)            |      60.54 |      60.58 |      +0.04
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR5.txt  instance 45 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.60 |      94.48 |      -0.12
+Wall time (s)                  |      60.10 |      60.03 |      -0.07
+Process elapsed (s)            |      60.79 |      60.79 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR5.txt  instance 46 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.31 |      94.23 |      -0.07
+Wall time (s)                  |      60.04 |      60.02 |      -0.01
+Process elapsed (s)            |      60.61 |      60.61 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR5.txt  instance 47 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.89 |      93.89 |      +0.00
+Wall time (s)                  |      60.06 |      60.02 |      -0.04
+Process elapsed (s)            |      60.47 |      60.47 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+============================================================
+SUMMARY for problems/clp/benchs/BR/BR5.txt  (6 instances)
+============================================================
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Avg final value (%)            |      93.85 |      93.92 |      +0.07
+Avg process time (s)           |      60.87 |      60.89 |      +0.01
+
+=== Comparison for problems/clp/benchs/BR/BR6.txt  instance 42 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.81 |      94.81 |      +0.00
+Wall time (s)                  |      60.11 |      60.04 |      -0.07
+Process elapsed (s)            |      62.08 |      62.07 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR6.txt  instance 43 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.95 |      93.69 |      -0.26
+Wall time (s)                  |      60.16 |      60.04 |      -0.11
+Process elapsed (s)            |      60.89 |      60.89 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR6.txt  instance 44 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.86 |      93.86 |      +0.00
+Wall time (s)                  |      60.10 |      60.13 |      +0.03
+Process elapsed (s)            |      60.54 |      60.59 |      +0.06
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR6.txt  instance 45 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.80 |      94.29 |      -0.50
+Wall time (s)                  |      60.14 |      60.21 |      +0.08
+Process elapsed (s)            |      60.91 |      60.91 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR6.txt  instance 46 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.28 |      94.28 |      +0.00
+Wall time (s)                  |      60.26 |      60.15 |      -0.11
+Process elapsed (s)            |      60.76 |      60.76 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR6.txt  instance 47 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.76 |      94.58 |      -0.18
+Wall time (s)                  |      60.13 |      60.17 |      +0.04
+Process elapsed (s)            |      60.69 |      60.77 |      +0.08
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+============================================================
+SUMMARY for problems/clp/benchs/BR/BR6.txt  (6 instances)
+============================================================
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Avg final value (%)            |      94.41 |      94.25 |      -0.16
+Avg process time (s)           |      60.98 |      61.00 |      +0.02
+
+=== Comparison for problems/clp/benchs/BR/BR7.txt  instance 42 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.17 |      94.17 |      +0.00
+Wall time (s)                  |      60.18 |      60.21 |      +0.03
+Process elapsed (s)            |      64.52 |      64.52 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR7.txt  instance 43 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.91 |      94.15 |      -0.77
+Wall time (s)                  |      60.49 |      60.22 |      -0.27
+Process elapsed (s)            |      61.09 |      61.09 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR7.txt  instance 44 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.09 |      94.09 |      +0.00
+Wall time (s)                  |      60.13 |      60.20 |      +0.07
+Process elapsed (s)            |      60.80 |      60.85 |      +0.05
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR7.txt  instance 45 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.86 |      93.91 |      +0.04
+Wall time (s)                  |      60.16 |      60.02 |      -0.13
+Process elapsed (s)            |      61.53 |      61.53 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR7.txt  instance 46 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      95.30 |      94.87 |      -0.43
+Wall time (s)                  |      60.25 |      60.08 |      -0.17
+Process elapsed (s)            |      60.74 |      60.74 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR7.txt  instance 47 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.28 |      94.28 |      +0.00
+Wall time (s)                  |      60.07 |      60.12 |      +0.05
+Process elapsed (s)            |      61.03 |      61.03 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+============================================================
+SUMMARY for problems/clp/benchs/BR/BR7.txt  (6 instances)
+============================================================
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Avg final value (%)            |      94.44 |      94.24 |      -0.19
+Avg process time (s)           |      61.62 |      61.62 |      +0.01
+
+=== Comparison for problems/clp/benchs/BR/BR8.txt  instance 42 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.69 |      93.69 |      +0.00
+Wall time (s)                  |      60.25 |      60.06 |      -0.18
+Process elapsed (s)            |      61.84 |      61.84 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR8.txt  instance 43 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      95.20 |      94.40 |      -0.80
+Wall time (s)                  |      60.11 |      60.30 |      +0.19
+Process elapsed (s)            |      60.82 |      60.98 |      +0.15
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR8.txt  instance 44 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      95.04 |      95.04 |      -0.00
+Wall time (s)                  |      60.02 |      60.26 |      +0.25
+Process elapsed (s)            |      60.82 |      61.05 |      +0.24
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR8.txt  instance 45 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      95.34 |      95.34 |      +0.00
+Wall time (s)                  |      60.02 |      60.21 |      +0.19
+Process elapsed (s)            |      61.16 |      61.34 |      +0.18
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR8.txt  instance 46 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      95.64 |      94.05 |      -1.58
+Wall time (s)                  |      60.08 |      60.22 |      +0.15
+Process elapsed (s)            |      60.54 |      60.74 |      +0.19
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR8.txt  instance 47 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.24 |      94.24 |      +0.00
+Wall time (s)                  |      60.05 |      60.20 |      +0.16
+Process elapsed (s)            |      61.21 |      61.34 |      +0.12
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+============================================================
+SUMMARY for problems/clp/benchs/BR/BR8.txt  (6 instances)
+============================================================
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Avg final value (%)            |      94.86 |      94.46 |      -0.40
+Avg process time (s)           |      61.07 |      61.21 |      +0.15
+
+=== Comparison for problems/clp/benchs/BR/BR9.txt  instance 42 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.57 |      94.57 |      +0.00
+Wall time (s)                  |      60.17 |      60.05 |      -0.11
+Process elapsed (s)            |      61.51 |      61.51 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR9.txt  instance 43 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.51 |      93.86 |      -0.65
+Wall time (s)                  |      60.21 |      60.05 |      -0.16
+Process elapsed (s)            |      60.63 |      60.63 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR9.txt  instance 44 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.56 |      94.37 |      -0.19
+Wall time (s)                  |      60.03 |      60.21 |      +0.18
+Process elapsed (s)            |      60.62 |      60.83 |      +0.21
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR9.txt  instance 45 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.11 |      93.95 |      -0.16
+Wall time (s)                  |      60.20 |      60.09 |      -0.11
+Process elapsed (s)            |      60.84 |      60.84 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR9.txt  instance 46 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.20 |      94.20 |      +0.00
+Wall time (s)                  |      60.08 |      60.15 |      +0.07
+Process elapsed (s)            |      60.96 |      60.96 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR9.txt  instance 47 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.60 |      93.53 |      -0.07
+Wall time (s)                  |      60.26 |      60.04 |      -0.21
+Process elapsed (s)            |      61.23 |      61.23 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+============================================================
+SUMMARY for problems/clp/benchs/BR/BR9.txt  (6 instances)
+============================================================
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Avg final value (%)            |      94.26 |      94.08 |      -0.18
+Avg process time (s)           |      60.97 |      61.00 |      +0.03
+
+=== Comparison for problems/clp/benchs/BR/BR10.txt  instance 42 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.86 |      93.86 |      +0.00
+Wall time (s)                  |      60.09 |      60.09 |      -0.00
+Process elapsed (s)            |      61.59 |      61.59 |      +0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR10.txt  instance 43 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.00 |      93.63 |      -0.37
+Wall time (s)                  |      60.24 |      60.03 |      -0.21
+Process elapsed (s)            |      60.76 |      60.76 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR10.txt  instance 44 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.79 |      94.26 |      -0.53
+Wall time (s)                  |      60.17 |      60.11 |      -0.06
+Process elapsed (s)            |      61.31 |      61.31 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR10.txt  instance 45 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.42 |      94.09 |      -0.33
+Wall time (s)                  |      60.12 |      60.02 |      -0.10
+Process elapsed (s)            |      61.70 |      61.70 |      +0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR10.txt  instance 46 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.45 |      93.00 |      -1.45
+Wall time (s)                  |      60.02 |      60.23 |      +0.21
+Process elapsed (s)            |      60.93 |      61.09 |      +0.15
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR10.txt  instance 47 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.74 |      93.47 |      -0.27
+Wall time (s)                  |      60.13 |      60.03 |      -0.09
+Process elapsed (s)            |      61.65 |      61.65 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+============================================================
+SUMMARY for problems/clp/benchs/BR/BR10.txt  (6 instances)
+============================================================
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Avg final value (%)            |      94.21 |      93.72 |      -0.49
+Avg process time (s)           |      61.32 |      61.35 |      +0.03
+
+=== Comparison for problems/clp/benchs/BR/BR11.txt  instance 42 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.67 |      94.67 |      +0.00
+Wall time (s)                  |      60.03 |      60.21 |      +0.19
+Process elapsed (s)            |      61.65 |      61.79 |      +0.13
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR11.txt  instance 43 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.37 |      92.91 |      -1.46
+Wall time (s)                  |      60.04 |      60.21 |      +0.17
+Process elapsed (s)            |      60.89 |      60.94 |      +0.05
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR11.txt  instance 44 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.67 |      93.04 |      -0.63
+Wall time (s)                  |      60.21 |      60.03 |      -0.18
+Process elapsed (s)            |      62.20 |      62.19 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR11.txt  instance 45 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.00 |      93.52 |      -0.48
+Wall time (s)                  |      60.21 |      60.04 |      -0.17
+Process elapsed (s)            |      62.45 |      62.45 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR11.txt  instance 46 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.07 |      92.70 |      -1.37
+Wall time (s)                  |      60.07 |      60.04 |      -0.03
+Process elapsed (s)            |      61.29 |      61.35 |      +0.06
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR11.txt  instance 47 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.66 |      93.03 |      -0.63
+Wall time (s)                  |      60.02 |      60.09 |      +0.07
+Process elapsed (s)            |      61.16 |      61.35 |      +0.18
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+============================================================
+SUMMARY for problems/clp/benchs/BR/BR11.txt  (6 instances)
+============================================================
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Avg final value (%)            |      94.07 |      93.31 |      -0.76
+Avg process time (s)           |      61.61 |      61.68 |      +0.07
+
+=== Comparison for problems/clp/benchs/BR/BR12.txt  instance 42 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.84 |      93.74 |      -0.10
+Wall time (s)                  |      60.05 |      60.01 |      -0.04
+Process elapsed (s)            |      63.66 |      63.69 |      +0.03
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR12.txt  instance 43 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.81 |      92.72 |      -1.09
+Wall time (s)                  |      60.03 |      60.19 |      +0.16
+Process elapsed (s)            |      60.61 |      60.78 |      +0.17
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR12.txt  instance 44 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.92 |      93.78 |      -0.14
+Wall time (s)                  |      60.06 |      60.26 |      +0.20
+Process elapsed (s)            |      61.47 |      61.63 |      +0.16
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR12.txt  instance 45 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.79 |      93.79 |      +0.00
+Wall time (s)                  |      60.17 |      60.04 |      -0.14
+Process elapsed (s)            |      62.04 |      62.03 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR12.txt  instance 46 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.01 |      93.09 |      -0.93
+Wall time (s)                  |      60.02 |      60.23 |      +0.21
+Process elapsed (s)            |      61.88 |      61.88 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR12.txt  instance 47 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.09 |      93.53 |      -0.56
+Wall time (s)                  |      60.13 |      60.16 |      +0.02
+Process elapsed (s)            |      60.76 |      60.80 |      +0.04
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+============================================================
+SUMMARY for problems/clp/benchs/BR/BR12.txt  (6 instances)
+============================================================
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Avg final value (%)            |      93.91 |      93.44 |      -0.47
+Avg process time (s)           |      61.74 |      61.80 |      +0.07
+
+=== Comparison for problems/clp/benchs/BR/BR13.txt  instance 42 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.09 |      93.71 |      -0.38
+Wall time (s)                  |      60.04 |      60.23 |      +0.19
+Process elapsed (s)            |      62.24 |      62.45 |      +0.22
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR13.txt  instance 43 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.60 |      93.90 |      -0.70
+Wall time (s)                  |      60.09 |      60.09 |      +0.00
+Process elapsed (s)            |      61.51 |      61.55 |      +0.04
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR13.txt  instance 44 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.62 |      92.83 |      -0.79
+Wall time (s)                  |      60.04 |      60.40 |      +0.36
+Process elapsed (s)            |      61.68 |      62.19 |      +0.52
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR13.txt  instance 45 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.86 |      92.38 |      -1.48
+Wall time (s)                  |      60.10 |      60.19 |      +0.09
+Process elapsed (s)            |      60.89 |      61.01 |      +0.12
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR13.txt  instance 46 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.34 |      93.70 |      -0.64
+Wall time (s)                  |      60.09 |      60.05 |      -0.05
+Process elapsed (s)            |      61.70 |      61.70 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR13.txt  instance 47 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.63 |      93.30 |      -1.33
+Wall time (s)                  |      60.18 |      60.10 |      -0.08
+Process elapsed (s)            |      61.94 |      62.19 |      +0.25
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+============================================================
+SUMMARY for problems/clp/benchs/BR/BR13.txt  (6 instances)
+============================================================
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Avg final value (%)            |      94.19 |      93.30 |      -0.89
+Avg process time (s)           |      61.66 |      61.85 |      +0.19
+
+=== Comparison for problems/clp/benchs/BR/BR14.txt  instance 42 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.22 |      93.63 |      -0.60
+Wall time (s)                  |      60.29 |      60.03 |      -0.26
+Process elapsed (s)            |      62.90 |      62.90 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR14.txt  instance 43 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.53 |      92.97 |      -0.56
+Wall time (s)                  |      61.04 |      61.09 |      +0.05
+Process elapsed (s)            |      62.18 |      62.78 |      +0.60
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR14.txt  instance 44 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.98 |      92.85 |      -1.13
+Wall time (s)                  |      60.05 |      60.19 |      +0.14
+Process elapsed (s)            |      61.52 |      61.79 |      +0.27
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR14.txt  instance 45 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.07 |      93.44 |      -0.64
+Wall time (s)                  |      60.08 |      60.03 |      -0.05
+Process elapsed (s)            |      61.65 |      61.65 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR14.txt  instance 46 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.39 |      93.28 |      -0.11
+Wall time (s)                  |      60.14 |      60.03 |      -0.11
+Process elapsed (s)            |      64.17 |      64.17 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR14.txt  instance 47 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.05 |      93.59 |      -0.46
+Wall time (s)                  |      60.04 |      60.07 |      +0.03
+Process elapsed (s)            |      62.34 |      62.34 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+============================================================
+SUMMARY for problems/clp/benchs/BR/BR14.txt  (6 instances)
+============================================================
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Avg final value (%)            |      93.88 |      93.29 |      -0.58
+Avg process time (s)           |      62.46 |      62.61 |      +0.14
+
+=== Comparison for problems/clp/benchs/BR/BR15.txt  instance 42 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.32 |      92.72 |      -0.59
+Wall time (s)                  |      60.01 |      60.05 |      +0.04
+Process elapsed (s)            |      60.77 |      60.79 |      +0.02
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR15.txt  instance 43 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.04 |      92.66 |      -0.37
+Wall time (s)                  |      60.03 |      60.10 |      +0.06
+Process elapsed (s)            |      61.65 |      61.75 |      +0.10
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR15.txt  instance 44 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.00 |      92.79 |      -0.21
+Wall time (s)                  |      60.05 |      60.03 |      -0.02
+Process elapsed (s)            |      62.81 |      62.81 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR15.txt  instance 45 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.67 |      93.73 |      -0.94
+Wall time (s)                  |      60.07 |      60.09 |      +0.02
+Process elapsed (s)            |      61.59 |      61.59 |      -0.00
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR15.txt  instance 46 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      93.61 |      93.47 |      -0.14
+Wall time (s)                  |      60.03 |      60.07 |      +0.04
+Process elapsed (s)            |      61.71 |      61.75 |      +0.04
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+=== Comparison for problems/clp/benchs/BR/BR15.txt  instance 47 ===
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Final value (%)                |      94.29 |      93.66 |      -0.63
+Wall time (s)                  |      60.05 |      60.11 |      +0.06
+Process elapsed (s)            |      62.88 |      63.39 |      +0.52
+MCTS enabled                   |       0.00 |       1.00 |      +1.00
+MCTS iter                      |          - |     100.00 |          -
+MCTS depth                     |          - |      30.00 |          -
+MCTS width                     |          - |       3.00 |          -
+MCTS c                         |          - |       1.40 |          -
+MCTS top                       |          - |       0.00 |          -
+MCTS vcs_weight                |          - |       0.00 |          -
+MCTS mcts_weight               |          - |       1.00 |          -
+MCTS greedy complete           |          - |       1.00 |          -
+
+============================================================
+SUMMARY for problems/clp/benchs/BR/BR15.txt  (6 instances)
+============================================================
+
+Metric                        |   BSS     |    MCTS   |    Delta
+------------------------------+-----------+-----------+-----------
+Avg final value (%)            |      93.65 |      93.17 |      -0.48
+Avg process time (s)           |      61.90 |      62.01 |      +0.11
