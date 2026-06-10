@@ -6,6 +6,7 @@ import subprocess
 import sys
 import time
 from pathlib import Path
+from datetime import datetime
 
 STAT_RE = re.compile(r"^\[STATS\] ([^=]+)=(.+)$")
 MCTS_LINE_RE = re.compile(r"^mcts: (.*)$")
@@ -36,6 +37,12 @@ def parse_args(argv):
         "--output-csv",
         dest="output_csv",
         help="Write comparison results to CSV file",
+        default=None,
+    )
+    parser.add_argument(
+        "--output-txt",
+        dest="output_txt",
+        help="Write comparison results to TXT file (default: results_<timestamp>.txt)",
         default=None,
     )
     parser.add_argument(
@@ -158,30 +165,56 @@ def format_row(name, base, mcts):
     return f"{name:30} | {base_str:>10} | {mcts_str:>10} | {delta:>10}"
 
 
-def print_comparison(baseline, mcts, bench_file, verbose=False):
-    print("\n=== Comparison for {} ===".format(bench_file))
+def build_comparison_lines(baseline, mcts, bench_file, verbose=False):
+    """Genera las líneas de comparación como lista de strings."""
+    lines = []
+    lines.append("\n=== Comparison for {} ===".format(bench_file))
     if verbose:
-        print("--- baseline stdout ---")
-        print(baseline["stdout"])
-        print("--- mcts stdout ---")
-        print(mcts["stdout"])
-    print("\nMetric                        |   BSS     |    MCTS   |    Delta")
-    print("------------------------------+-----------+-----------+-----------")
-    print(format_row("Final value (%)", baseline.get("final_value"), mcts.get("final_value")))
-    print(format_row("Wall time (s)", baseline.get("wall_time_s", baseline.get("process_time_s")), mcts.get("wall_time_s", mcts.get("process_time_s"))))
-    print(format_row("Process elapsed (s)", baseline.get("process_time_s"), mcts.get("process_time_s")))
-    print(format_row("MCTS enabled", baseline.get("mcts_enabled"), mcts.get("mcts_enabled")))
-    print(format_row("MCTS iter", baseline.get("mcts_iter"), mcts.get("mcts_iter")))
-    print(format_row("MCTS depth", baseline.get("mcts_depth"), mcts.get("mcts_depth")))
-    print(format_row("MCTS width", baseline.get("mcts_width"), mcts.get("mcts_width")))
-    print(format_row("MCTS c", baseline.get("mcts_c"), mcts.get("mcts_c")))
-    print(format_row("MCTS top", baseline.get("mcts_top"), mcts.get("mcts_top")))
-    print(format_row("MCTS vcs_weight", baseline.get("mcts_vcs_weight"), mcts.get("mcts_vcs_weight")))
-    print(format_row("MCTS mcts_weight", baseline.get("mcts_mcts_weight"), mcts.get("mcts_mcts_weight")))
-    print(format_row("MCTS greedy complete", baseline.get("mcts_complete_with_greedy"), mcts.get("mcts_complete_with_greedy")))
+        lines.append("--- baseline stdout ---")
+        lines.append(baseline["stdout"])
+        lines.append("--- mcts stdout ---")
+        lines.append(mcts["stdout"])
+    lines.append("\nMetric                        |   BSS     |    MCTS   |    Delta")
+    lines.append("------------------------------+-----------+-----------+-----------")
+    lines.append(format_row("Final value (%)", baseline.get("final_value"), mcts.get("final_value")))
+    lines.append(format_row("Wall time (s)", baseline.get("wall_time_s", baseline.get("process_time_s")), mcts.get("wall_time_s", mcts.get("process_time_s"))))
+    lines.append(format_row("Process elapsed (s)", baseline.get("process_time_s"), mcts.get("process_time_s")))
+    lines.append(format_row("MCTS enabled", baseline.get("mcts_enabled"), mcts.get("mcts_enabled")))
+    lines.append(format_row("MCTS iter", baseline.get("mcts_iter"), mcts.get("mcts_iter")))
+    lines.append(format_row("MCTS depth", baseline.get("mcts_depth"), mcts.get("mcts_depth")))
+    lines.append(format_row("MCTS width", baseline.get("mcts_width"), mcts.get("mcts_width")))
+    lines.append(format_row("MCTS c", baseline.get("mcts_c"), mcts.get("mcts_c")))
+    lines.append(format_row("MCTS top", baseline.get("mcts_top"), mcts.get("mcts_top")))
+    lines.append(format_row("MCTS vcs_weight", baseline.get("mcts_vcs_weight"), mcts.get("mcts_vcs_weight")))
+    lines.append(format_row("MCTS mcts_weight", baseline.get("mcts_mcts_weight"), mcts.get("mcts_mcts_weight")))
+    lines.append(format_row("MCTS greedy complete", baseline.get("mcts_complete_with_greedy"), mcts.get("mcts_complete_with_greedy")))
 
     if baseline.get("exit_code", 0) != 0 or mcts.get("exit_code", 0) != 0:
-        print("\nWarning: One of the runs exited with non-zero status")
+        lines.append("\nWarning: One of the runs exited with non-zero status")
+
+    return lines
+
+
+def print_comparison(baseline, mcts, bench_file, verbose=False):
+    lines = build_comparison_lines(baseline, mcts, bench_file, verbose)
+    for line in lines:
+        print(line)
+
+
+def append_txt(path, baseline, mcts, bench_file, verbose=False):
+    """Agrega los resultados de una comparación al archivo .txt."""
+    lines = build_comparison_lines(baseline, mcts, bench_file, verbose)
+    with open(path, "a", encoding="utf-8") as f:
+        for line in lines:
+            f.write(line + "\n")
+
+
+def init_txt(path):
+    """Escribe el encabezado del archivo .txt con timestamp."""
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("BSG vs BSG+MCTS Comparison Results\n")
+        f.write(f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+        f.write("=" * 60 + "\n")
 
 
 def main():
@@ -197,12 +230,24 @@ def main():
     bench_files = expand_benchmarks(args.bench_path, args.range, args.prefix)
     bsg_args = [arg for arg in bsg_args if arg != "--mcts"]
 
+    # Determinar path del .txt
+    txt_path = args.output_txt
+    if txt_path is None:
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        txt_path = f"results_{timestamp}.txt"
+
+    init_txt(txt_path)
+    print(f"Saving TXT output to: {txt_path}")
     print(f"Found {len(bench_files)} benchmark file(s) to compare.")
+
     for bench_file in bench_files:
         baseline, mcts = run_pair(args.bsg_bin, bench_file, bsg_args)
         print_comparison(baseline, mcts, bench_file, args.verbose)
+        append_txt(txt_path, baseline, mcts, bench_file, args.verbose)
         if args.output_csv:
             write_csv(args.output_csv, baseline, mcts)
+
+    print(f"\nResults saved to: {txt_path}")
 
 
 def write_csv(path, baseline, mcts):
