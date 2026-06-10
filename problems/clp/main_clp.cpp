@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <chrono>
 #include "args.hxx"
 //#include "objects/State.cpp"
 #include "clpState.h"
@@ -137,6 +138,7 @@ int main(int argc, char** argv){
 
     cout << "n_blocks:"<< s0->get_n_valid_blocks() << endl;
 
+    auto wall_begin = std::chrono::steady_clock::now();
     clock_t begin_time=clock();
 
     VCS_Function* vcs = new VCS_Function(s0->nb_left_boxes, *s0->cont,
@@ -186,9 +188,24 @@ int main(int argc, char** argv){
 	cout << "running" << endl;
 
     double eval=bsg->run(s_copy, maxtime, begin_time) ;
+    auto wall_end = std::chrono::steady_clock::now();
+    double wall_time = std::chrono::duration<double>(wall_end - wall_begin).count();
 
     cout << "% volume utilization" << endl;
 	cout << eval*100 << endl;
+    cout << "[STATS] final_value=" << eval*100 << endl;
+    cout << "[STATS] wall_time_s=" << wall_time << endl;
+    cout << "[STATS] mcts_enabled=" << (mcts_params.enabled?1:0) << endl;
+    if(mcts_params.enabled){
+        cout << "[STATS] mcts_iter=" << mcts_params.iterations << endl;
+        cout << "[STATS] mcts_depth=" << mcts_params.rollout_depth << endl;
+        cout << "[STATS] mcts_width=" << mcts_params.rollout_width << endl;
+        cout << "[STATS] mcts_c=" << mcts_params.exploration << endl;
+        cout << "[STATS] mcts_top=" << mcts_params.top_candidates << endl;
+        cout << "[STATS] mcts_vcs_weight=" << mcts_params.vcs_weight << endl;
+        cout << "[STATS] mcts_mcts_weight=" << mcts_params.mcts_weight << endl;
+        cout << "[STATS] mcts_complete_with_greedy=" << (mcts_params.complete_with_greedy?1:0) << endl;
+    }
 	// << " " << de->get_best_state()->get_value2() << " " << eval*de->get_best_state()->get_value2() << endl;
 
 

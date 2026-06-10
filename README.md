@@ -97,6 +97,24 @@ Equivalente con valores por defecto:
 ./build/BSG_CLP problems/clp/benchs/BR/BR2.txt -i 47 -t 10 -f BR --mcts
 ```
 
+### Comparación paralela BSS vs MCTS
+
+Se agregó un script wrapper para ejecutar ambos modos en procesos distintos y esperar a que terminen antes de mostrar una tabla comparativa.
+
+```sh
+./scripts/bsg_compare.py problems/clp/benchs/BR --range 0-15 -- \
+  -i 47 -t 60 -f BR --mcts_iter=50 --mcts_depth=10 --mcts_width=3 --mcts_c=1.4
+```
+
+Si solo quieres comparar un archivo específico:
+
+```sh
+./scripts/bsg_compare.py problems/clp/benchs/BR/BR2.txt -- \
+  -i 47 -t 60 -f BR --mcts_iter=50 --mcts_depth=10 --mcts_width=3 --mcts_c=1.4
+```
+
+El separador `--` indica que lo que sigue son argumentos de `BSG_CLP`.
+
 **Nota**: Los parametros MCTS solo se usan si `--mcts` esta habilitado.
 
 Opciones principales:
