@@ -28,6 +28,13 @@ def parse_args(argv):
         default=None,
     )
     parser.add_argument(
+        "--instances",
+        dest="instances",
+        help="Range of -i instances to run per benchmark, in the form x-y (e.g. 15-47). "
+             "Overrides any -i passed after --.",
+        default=None,
+    )
+    parser.add_argument(
         "--bsg-bin",
         dest="bsg_bin",
         default="./build/BSG_CLP",
@@ -76,6 +83,36 @@ def expand_benchmarks(bench_path, rng, prefix):
     if path.is_file():
         return [path]
     raise FileNotFoundError(f"Benchmark path not found: {bench_path}")
+
+
+def parse_instance_range(instances_str):
+    """Parsea '15-47' y retorna (15, 47). Retorna None si es None."""
+    if instances_str is None:
+        return None
+    try:
+        start, end = [int(x) for x in instances_str.split("-")]
+    except Exception:
+        raise ValueError("--instances must be in the form x-y, e.g. 15-47")
+    if start > end:
+        raise ValueError("--instances must satisfy x <= y")
+    return start, end
+
+
+def strip_i_flag(bsg_args):
+    """Elimina cualquier -i <val> o -i<val> de bsg_args para que --instances tome precedencia."""
+    cleaned = []
+    skip_next = False
+    for arg in bsg_args:
+        if skip_next:
+            skip_next = False
+            continue
+        if arg == "-i":
+            skip_next = True   # el siguiente token es el valor, también lo saltamos
+            continue
+        if re.match(r"^-i\d+$", arg):
+            continue            # forma compacta: -i47
+        cleaned.append(arg)
+    return cleaned
 
 
 def parse_stats(output):
@@ -141,6 +178,7 @@ def collect_process(proc_info):
 
 
 def run_pair(bsg_bin, bench_file, bsg_args):
+    """Corre un par BSS / BSS+MCTS para los bsg_args dados (ya incluyen -i si aplica)."""
     baseline_info = start_process("BSS", bsg_bin, bench_file, bsg_args, False)
     mcts_info = start_process("BSS+MCTS", bsg_bin, bench_file, bsg_args, True)
     baseline_stats = collect_process(baseline_info)
@@ -165,10 +203,13 @@ def format_row(name, base, mcts):
     return f"{name:30} | {base_str:>10} | {mcts_str:>10} | {delta:>10}"
 
 
-def build_comparison_lines(baseline, mcts, bench_file, verbose=False):
+def build_comparison_lines(baseline, mcts, bench_file, instance_id=None, verbose=False):
     """Genera las líneas de comparación como lista de strings."""
+    header = str(bench_file)
+    if instance_id is not None:
+        header += f"  instance {instance_id}"
     lines = []
-    lines.append("\n=== Comparison for {} ===".format(bench_file))
+    lines.append("\n=== Comparison for {} ===".format(header))
     if verbose:
         lines.append("--- baseline stdout ---")
         lines.append(baseline["stdout"])
@@ -195,15 +236,34 @@ def build_comparison_lines(baseline, mcts, bench_file, verbose=False):
     return lines
 
 
-def print_comparison(baseline, mcts, bench_file, verbose=False):
-    lines = build_comparison_lines(baseline, mcts, bench_file, verbose)
+def build_summary_lines(summaries, bench_file):
+    """Genera un bloque de resumen promedio para un benchmark dado."""
+    if not summaries:
+        return []
+
+    def avg(key, mode):
+        vals = [s[mode].get(key) for s in summaries if isinstance(s[mode].get(key), (int, float))]
+        return sum(vals) / len(vals) if vals else None
+
+    lines = []
+    lines.append(f"\n{'='*60}")
+    lines.append(f"SUMMARY for {bench_file}  ({len(summaries)} instances)")
+    lines.append(f"{'='*60}")
+    lines.append("\nMetric                        |   BSS     |    MCTS   |    Delta")
+    lines.append("------------------------------+-----------+-----------+-----------")
+    lines.append(format_row("Avg final value (%)", avg("final_value", "baseline"), avg("final_value", "mcts")))
+    lines.append(format_row("Avg process time (s)", avg("process_time_s", "baseline"), avg("process_time_s", "mcts")))
+    return lines
+
+
+def print_comparison(baseline, mcts, bench_file, instance_id=None, verbose=False):
+    lines = build_comparison_lines(baseline, mcts, bench_file, instance_id, verbose)
     for line in lines:
         print(line)
 
 
-def append_txt(path, baseline, mcts, bench_file, verbose=False):
-    """Agrega los resultados de una comparación al archivo .txt."""
-    lines = build_comparison_lines(baseline, mcts, bench_file, verbose)
+def append_txt(path, lines):
+    """Agrega líneas al archivo .txt."""
     with open(path, "a", encoding="utf-8") as f:
         for line in lines:
             f.write(line + "\n")
@@ -230,6 +290,17 @@ def main():
     bench_files = expand_benchmarks(args.bench_path, args.range, args.prefix)
     bsg_args = [arg for arg in bsg_args if arg != "--mcts"]
 
+    # Parsear rango de instancias
+    instance_range = parse_instance_range(args.instances)
+    if instance_range is not None:
+        # Eliminar -i que venga en bsg_args para que no colisione
+        bsg_args = strip_i_flag(bsg_args)
+        inst_start, inst_end = instance_range
+        instance_ids = list(range(inst_start, inst_end + 1))
+    else:
+        # Sin --instances: usar los args tal como vienen (puede tener -i fijo o ninguno)
+        instance_ids = None
+
     # Determinar path del .txt
     txt_path = args.output_txt
     if txt_path is None:
@@ -238,19 +309,55 @@ def main():
 
     init_txt(txt_path)
     print(f"Saving TXT output to: {txt_path}")
-    print(f"Found {len(bench_files)} benchmark file(s) to compare.")
+
+    if instance_ids is not None:
+        print(f"Found {len(bench_files)} benchmark file(s), "
+              f"{len(instance_ids)} instance(s) each "
+              f"(i={inst_start}..{inst_end}).")
+    else:
+        print(f"Found {len(bench_files)} benchmark file(s) to compare.")
 
     for bench_file in bench_files:
-        baseline, mcts = run_pair(args.bsg_bin, bench_file, bsg_args)
-        print_comparison(baseline, mcts, bench_file, args.verbose)
-        append_txt(txt_path, baseline, mcts, bench_file, args.verbose)
-        if args.output_csv:
-            write_csv(args.output_csv, baseline, mcts)
+        summaries = []  # acumula resultados de todas las instancias de este benchmark
+
+        if instance_ids is not None:
+            print(f"\n>>> Benchmark: {bench_file}")
+            for inst_id in instance_ids:
+                run_args = bsg_args + ["-i", str(inst_id)]
+                print(f"    instance {inst_id}...", end=" ", flush=True)
+                baseline, mcts = run_pair(args.bsg_bin, bench_file, run_args)
+                print(f"BSS={format_value(baseline.get('final_value'))}  "
+                      f"MCTS={format_value(mcts.get('final_value'))}")
+
+                cmp_lines = build_comparison_lines(baseline, mcts, bench_file, inst_id, args.verbose)
+                for line in cmp_lines:
+                    print(line) if args.verbose else None
+                append_txt(txt_path, cmp_lines)
+
+                summaries.append({"baseline": baseline, "mcts": mcts})
+
+                if args.output_csv:
+                    write_csv(args.output_csv, baseline, mcts, inst_id)
+
+            # Resumen promedio del benchmark
+            summary_lines = build_summary_lines(summaries, bench_file)
+            for line in summary_lines:
+                print(line)
+            append_txt(txt_path, summary_lines)
+
+        else:
+            # Comportamiento original: un par por benchmark sin iterar instancias
+            baseline, mcts = run_pair(args.bsg_bin, bench_file, bsg_args)
+            cmp_lines = build_comparison_lines(baseline, mcts, bench_file, verbose=args.verbose)
+            print_comparison(baseline, mcts, bench_file, verbose=args.verbose)
+            append_txt(txt_path, cmp_lines)
+            if args.output_csv:
+                write_csv(args.output_csv, baseline, mcts)
 
     print(f"\nResults saved to: {txt_path}")
 
 
-def write_csv(path, baseline, mcts):
+def write_csv(path, baseline, mcts, instance_id=None):
     import csv
     exists = os.path.exists(path)
     with open(path, "a", newline="") as csvfile:
@@ -258,6 +365,7 @@ def write_csv(path, baseline, mcts):
         if not exists:
             writer.writerow([
                 "bench_file",
+                "instance_id",
                 "mode",
                 "final_value",
                 "wall_time_s",
@@ -276,6 +384,7 @@ def write_csv(path, baseline, mcts):
         for stats in (baseline, mcts):
             writer.writerow([
                 stats.get("bench_file"),
+                instance_id,
                 stats.get("label"),
                 stats.get("final_value"),
                 stats.get("wall_time_s"),
