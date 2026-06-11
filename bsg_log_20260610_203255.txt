@@ -1,0 +1,2343 @@
+=== BR0  instance 42 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR0.txt
+Instance:43
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:640
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.002451): 0.86682916 2 nodes
+[DoubleEffort] new best_solution_found (0.005483): 0.86682916
+beams/max_level_size:6/36
+beams/max_level_size:8/64
+beams/max_level_size:11/121
+beams/max_level_size:16/256
+beams/max_level_size:23/529
+beams/max_level_size:33/1089
+beams/max_level_size:47/2209
+beams/max_level_size:66/4356
+beams/max_level_size:93/8649
+beams/max_level_size:132/17424
+beams/max_level_size:187/34969
+beams/max_level_size:264/69696
+beams/max_level_size:373/139129
+% volume utilization
+86.682916
+
+=== BR0  instance 43 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR0.txt
+Instance:44
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:295
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.000498): 0.81229341 1 nodes
+[BSG_path] new best_solution_found (0.000652): 0.86306175 2 nodes
+[DoubleEffort] new best_solution_found (0.002519): 0.86306175
+beams/max_level_size:6/36
+beams/max_level_size:8/64
+beams/max_level_size:11/121
+beams/max_level_size:16/256
+beams/max_level_size:23/529
+beams/max_level_size:33/1089
+beams/max_level_size:47/2209
+beams/max_level_size:66/4356
+beams/max_level_size:93/8649
+beams/max_level_size:132/17424
+beams/max_level_size:187/34969
+beams/max_level_size:264/69696
+beams/max_level_size:373/139129
+beams/max_level_size:528/278784
+beams/max_level_size:747/558009
+beams/max_level_size:1056/1115136
+beams/max_level_size:1493/2229049
+beams/max_level_size:2111/4456321
+beams/max_level_size:2985/8910225
+beams/max_level_size:4221/17816841
+beams/max_level_size:5969/35628961
+beams/max_level_size:8441/71250481
+beams/max_level_size:11937/142491969
+beams/max_level_size:16881/284968161
+beams/max_level_size:23873/569920129
+beams/max_level_size:33762/1139872644
+beams/max_level_size:47747/-2015191287
+beams/max_level_size:67524/264729832
+beams/max_level_size:95493/529508685
+beams/max_level_size:135047/1059038574
+beams/max_level_size:190985/2118023650
+beams/max_level_size:270094/-58813000
+beams/max_level_size:381971/-116883126
+% volume utilization
+86.306175
+
+=== BR0  instance 44 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR0.txt
+Instance:45
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.015057): 0.93529696 1 nodes
+[DoubleEffort] new best_solution_found (0.038766): 0.93529696
+beams/max_level_size:6/36
+beams/max_level_size:8/64
+[BSG_path] new best_solution_found (0.150538): 0.9495763 10 nodes
+[DoubleEffort] new best_solution_found (0.241626): 0.9495763
+beams/max_level_size:11/121
+beams/max_level_size:16/256
+beams/max_level_size:23/529
+beams/max_level_size:33/1089
+beams/max_level_size:47/2209
+% volume utilization
+94.95763
+
+=== BR0  instance 45 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR0.txt
+Instance:46
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:2434
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.00378): 0.93097247 2 nodes
+[BSG_path] new best_solution_found (0.004736): 0.93694025 2 nodes
+[DoubleEffort] new best_solution_found (0.008497): 0.93694025
+beams/max_level_size:6/36
+beams/max_level_size:8/64
+beams/max_level_size:11/121
+beams/max_level_size:16/256
+beams/max_level_size:23/529
+beams/max_level_size:33/1089
+beams/max_level_size:47/2209
+beams/max_level_size:66/4356
+beams/max_level_size:93/8649
+% volume utilization
+93.694025
+
+=== BR1  instance 42 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR1.txt
+Instance:43
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.016653): 0.94827332 4 nodes
+[DoubleEffort] new best_solution_found (0.064343): 0.94827332
+beams/max_level_size:6/36
+beams/max_level_size:8/64
+[BSG_path] new best_solution_found (0.39431): 0.95773579 4 nodes
+[BSG_path] new best_solution_found (0.557501): 0.9621183 5 nodes
+[DoubleEffort] new best_solution_found (0.577743): 0.9621183
+beams/max_level_size:11/121
+beams/max_level_size:16/256
+beams/max_level_size:23/529
+beams/max_level_size:33/1089
+% volume utilization
+96.21183
+
+=== BR1  instance 43 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR1.txt
+Instance:44
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:1141
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.001897): 0.80103099 4 nodes
+[DoubleEffort] new best_solution_found (0.013459): 0.80103099
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (0.023053): 0.8134219 3 nodes
+[BSG_path] new best_solution_found (0.034316): 0.82288869 8 nodes
+[BSG_path] new best_solution_found (0.036804): 0.82570202 6 nodes
+[BSG_path] new best_solution_found (0.047409): 0.83204806 6 nodes
+[DoubleEffort] new best_solution_found (0.057552): 0.83204806
+beams/max_level_size:8/64
+[BSG_path] new best_solution_found (0.089521): 0.87965644 2 nodes
+[DoubleEffort] new best_solution_found (0.119054): 0.87965644
+beams/max_level_size:11/121
+[BSG_path] new best_solution_found (0.188766): 0.88128557 7 nodes
+[BSG_path] new best_solution_found (0.232073): 0.88159299 9 nodes
+[BSG_path] new best_solution_found (0.23234): 0.88440632 9 nodes
+[DoubleEffort] new best_solution_found (0.26303): 0.88440632
+beams/max_level_size:16/256
+[BSG_path] new best_solution_found (0.557612): 0.89418677 5 nodes
+[BSG_path] new best_solution_found (0.558082): 0.89899573 5 nodes
+[DoubleEffort] new best_solution_found (0.604628): 0.89899573
+beams/max_level_size:23/529
+[BSG_path] new best_solution_found (1.347165): 0.89930315 11 nodes
+[BSG_path] new best_solution_found (1.375538): 0.89991798 11 nodes
+[DoubleEffort] new best_solution_found (1.45183): 0.89991798
+beams/max_level_size:33/1089
+beams/max_level_size:47/2209
+beams/max_level_size:66/4356
+% volume utilization
+89.991798
+
+=== BR1  instance 44 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR1.txt
+Instance:45
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.01748): 0.90527554 3 nodes
+[BSG_path] new best_solution_found (0.021461): 0.92894084 3 nodes
+[BSG_path] new best_solution_found (0.023599): 0.93503125 4 nodes
+[BSG_path] new best_solution_found (0.058012): 0.93860109 3 nodes
+[BSG_path] new best_solution_found (0.063995): 0.94027259 4 nodes
+[DoubleEffort] new best_solution_found (0.065588): 0.94027259
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (0.133747): 0.94406905 3 nodes
+[BSG_path] new best_solution_found (0.189613): 0.94648952 4 nodes
+[BSG_path] new best_solution_found (0.190412): 0.9509821 3 nodes
+[BSG_path] new best_solution_found (0.202029): 0.95437795 5 nodes
+[DoubleEffort] new best_solution_found (0.204158): 0.95437795
+beams/max_level_size:8/64
+beams/max_level_size:11/121
+beams/max_level_size:16/256
+[BSG_path] new best_solution_found (2.056532): 0.9555011 9 nodes
+[DoubleEffort] new best_solution_found (2.162578): 0.9555011
+beams/max_level_size:23/529
+beams/max_level_size:33/1089
+[BSG_path] new best_solution_found (8.832806): 0.95869655 16 nodes
+[DoubleEffort] new best_solution_found (10.007787): 0.95869655
+% volume utilization
+95.869655
+
+=== BR1  instance 45 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR1.txt
+Instance:46
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:2791
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.005141): 0.93418209 3 nodes
+[BSG_path] new best_solution_found (0.011515): 0.94134589 3 nodes
+[DoubleEffort] new best_solution_found (0.015012): 0.94134589
+beams/max_level_size:6/36
+beams/max_level_size:8/64
+beams/max_level_size:11/121
+beams/max_level_size:16/256
+beams/max_level_size:23/529
+beams/max_level_size:33/1089
+beams/max_level_size:47/2209
+beams/max_level_size:66/4356
+% volume utilization
+94.134589
+
+=== BR2  instance 42 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR2.txt
+Instance:43
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:8972
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.017004): 0.87525745 9 nodes
+[BSG_path] new best_solution_found (0.019321): 0.89421369 3 nodes
+[BSG_path] new best_solution_found (0.044029): 0.89526594 4 nodes
+[BSG_path] new best_solution_found (0.061614): 0.89640494 4 nodes
+[BSG_path] new best_solution_found (0.07108): 0.8979353 5 nodes
+[DoubleEffort] new best_solution_found (0.071289): 0.8979353
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (0.141254): 0.90552888 7 nodes
+[BSG_path] new best_solution_found (0.179506): 0.92098504 5 nodes
+[DoubleEffort] new best_solution_found (0.218342): 0.92098504
+beams/max_level_size:8/64
+beams/max_level_size:11/121
+[BSG_path] new best_solution_found (0.836066): 0.94088121 7 nodes
+[BSG_path] new best_solution_found (0.928415): 0.94307246 9 nodes
+[BSG_path] new best_solution_found (0.942179): 0.95223476 10 nodes
+[BSG_path] new best_solution_found (1.016585): 0.95277946 11 nodes
+[BSG_path] new best_solution_found (1.039159): 0.95442601 11 nodes
+[DoubleEffort] new best_solution_found (1.121231): 0.95442601
+beams/max_level_size:16/256
+beams/max_level_size:23/529
+[BSG_path] new best_solution_found (5.604163): 0.95661727 11 nodes
+[DoubleEffort] new best_solution_found (6.020904): 0.95661727
+beams/max_level_size:33/1089
+% volume utilization
+95.661727
+
+=== BR2  instance 43 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR2.txt
+Instance:44
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:3254
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.005485): 0.83565422 10 nodes
+[BSG_path] new best_solution_found (0.012455): 0.84353202 14 nodes
+[BSG_path] new best_solution_found (0.016667): 0.85305072 19 nodes
+[BSG_path] new best_solution_found (0.023349): 0.86250847 13 nodes
+[BSG_path] new best_solution_found (0.031587): 0.87318358 13 nodes
+[DoubleEffort] new best_solution_found (0.063194): 0.87318358
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (0.17608): 0.88281381 13 nodes
+[BSG_path] new best_solution_found (0.199638): 0.88342864 14 nodes
+[BSG_path] new best_solution_found (0.207711): 0.88745029 15 nodes
+[BSG_path] new best_solution_found (0.208197): 0.89067559 16 nodes
+[BSG_path] new best_solution_found (0.216661): 0.89129042 17 nodes
+[DoubleEffort] new best_solution_found (0.228246): 0.89129042
+beams/max_level_size:8/64
+[BSG_path] new best_solution_found (0.351654): 0.90586129 15 nodes
+[DoubleEffort] new best_solution_found (0.521068): 0.90586129
+beams/max_level_size:11/121
+[BSG_path] new best_solution_found (0.834014): 0.91189792 8 nodes
+[BSG_path] new best_solution_found (0.979913): 0.91565105 13 nodes
+[BSG_path] new best_solution_found (1.006359): 0.91803911 14 nodes
+[BSG_path] new best_solution_found (1.047547): 0.92064433 14 nodes
+[DoubleEffort] new best_solution_found (1.061794): 0.92064433
+beams/max_level_size:16/256
+[BSG_path] new best_solution_found (1.803459): 0.92409203 6 nodes
+[BSG_path] new best_solution_found (2.036221): 0.92926358 6 nodes
+[DoubleEffort] new best_solution_found (2.156633): 0.92926358
+beams/max_level_size:23/529
+beams/max_level_size:33/1089
+beams/max_level_size:47/2209
+% volume utilization
+92.926358
+
+=== BR2  instance 44 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR2.txt
+Instance:45
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.017543): 0.92411247 5 nodes
+[BSG_path] new best_solution_found (0.023045): 0.92765698 8 nodes
+[BSG_path] new best_solution_found (0.088426): 0.93367819 7 nodes
+[DoubleEffort] new best_solution_found (0.096356): 0.93367819
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (0.21119): 0.940805 11 nodes
+[BSG_path] new best_solution_found (0.297511): 0.94693459 10 nodes
+[BSG_path] new best_solution_found (0.33093): 0.95711199 8 nodes
+[BSG_path] new best_solution_found (0.331486): 0.96016467 11 nodes
+[DoubleEffort] new best_solution_found (0.359686): 0.96016467
+beams/max_level_size:8/64
+[BSG_path] new best_solution_found (0.791695): 0.96068182 11 nodes
+[DoubleEffort] new best_solution_found (0.799528): 0.96068182
+beams/max_level_size:11/121
+beams/max_level_size:16/256
+beams/max_level_size:23/529
+beams/max_level_size:33/1089
+% volume utilization
+96.068182
+
+=== BR2  instance 45 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR2.txt
+Instance:46
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.017433): 0.92174085 5 nodes
+[DoubleEffort] new best_solution_found (0.0546): 0.92174085
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (0.100793): 0.92890465 5 nodes
+[BSG_path] new best_solution_found (0.174197): 0.92976887 6 nodes
+[BSG_path] new best_solution_found (0.179471): 0.93044984 8 nodes
+[BSG_path] new best_solution_found (0.18087): 0.93359624 8 nodes
+[BSG_path] new best_solution_found (0.183681): 0.93479226 8 nodes
+[BSG_path] new best_solution_found (0.18723): 0.93539367 8 nodes
+[DoubleEffort] new best_solution_found (0.192106): 0.93539367
+beams/max_level_size:8/64
+beams/max_level_size:11/121
+beams/max_level_size:16/256
+beams/max_level_size:23/529
+[BSG_path] new best_solution_found (4.450799): 0.93767007 7 nodes
+[BSG_path] new best_solution_found (5.112484): 0.93885991 9 nodes
+[BSG_path] new best_solution_found (5.412943): 0.94363784 8 nodes
+[DoubleEffort] new best_solution_found (5.529878): 0.94363784
+beams/max_level_size:33/1089
+% volume utilization
+94.363784
+
+=== BR3  instance 42 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR3.txt
+Instance:43
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:4715
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.010808): 0.92177582 8 nodes
+[BSG_path] new best_solution_found (0.078538): 0.92818115 7 nodes
+[BSG_path] new best_solution_found (0.090397): 0.92919153 8 nodes
+[BSG_path] new best_solution_found (0.092409): 0.9294685 9 nodes
+[BSG_path] new best_solution_found (0.092846): 0.93051105 10 nodes
+[DoubleEffort] new best_solution_found (0.094795): 0.93051105
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (0.29283): 0.934925 10 nodes
+[BSG_path] new best_solution_found (0.29313): 0.93725491 11 nodes
+[DoubleEffort] new best_solution_found (0.306414): 0.93725491
+beams/max_level_size:8/64
+[BSG_path] new best_solution_found (0.661636): 0.93891794 9 nodes
+[BSG_path] new best_solution_found (0.673643): 0.93967541 10 nodes
+[DoubleEffort] new best_solution_found (0.688881): 0.93967541
+beams/max_level_size:11/121
+[BSG_path] new best_solution_found (1.396167): 0.94225012 14 nodes
+[DoubleEffort] new best_solution_found (1.405034): 0.94225012
+beams/max_level_size:16/256
+[BSG_path] new best_solution_found (2.85704): 0.94338533 13 nodes
+[DoubleEffort] new best_solution_found (2.965219): 0.94338533
+beams/max_level_size:23/529
+[BSG_path] new best_solution_found (5.805242): 0.94642132 12 nodes
+[BSG_path] new best_solution_found (6.092296): 0.95041426 14 nodes
+[BSG_path] new best_solution_found (6.396967): 0.95084338 15 nodes
+[BSG_path] new best_solution_found (6.426548): 0.95160085 14 nodes
+[BSG_path] new best_solution_found (6.574125): 0.95288701 14 nodes
+[DoubleEffort] new best_solution_found (6.849712): 0.95288701
+beams/max_level_size:33/1089
+% volume utilization
+95.288701
+
+=== BR3  instance 43 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR3.txt
+Instance:44
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.023013): 0.85490036 12 nodes
+[BSG_path] new best_solution_found (0.026918): 0.85792905 11 nodes
+[BSG_path] new best_solution_found (0.035281): 0.87768858 10 nodes
+[BSG_path] new best_solution_found (0.053273): 0.88480253 12 nodes
+[BSG_path] new best_solution_found (0.116333): 0.89290716 10 nodes
+[BSG_path] new best_solution_found (0.117085): 0.89318705 12 nodes
+[BSG_path] new best_solution_found (0.129956): 0.89418291 10 nodes
+[BSG_path] new best_solution_found (0.134398): 0.89564242 11 nodes
+[BSG_path] new best_solution_found (0.140688): 0.90082407 12 nodes
+[DoubleEffort] new best_solution_found (0.14387): 0.90082407
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (0.406981): 0.90561197 15 nodes
+[BSG_path] new best_solution_found (0.418779): 0.90601909 8 nodes
+[BSG_path] new best_solution_found (0.438826): 0.90648323 13 nodes
+[BSG_path] new best_solution_found (0.442563): 0.90782915 11 nodes
+[BSG_path] new best_solution_found (0.44275): 0.90851171 13 nodes
+[BSG_path] new best_solution_found (0.445217): 0.9085145 13 nodes
+[DoubleEffort] new best_solution_found (0.460027): 0.9085145
+beams/max_level_size:8/64
+[BSG_path] new best_solution_found (0.829189): 0.9089832 12 nodes
+[BSG_path] new best_solution_found (0.942312): 0.9136575 11 nodes
+[BSG_path] new best_solution_found (0.945087): 0.91792771 9 nodes
+[BSG_path] new best_solution_found (0.985983): 0.92294233 11 nodes
+[BSG_path] new best_solution_found (0.991548): 0.92514831 14 nodes
+[BSG_path] new best_solution_found (1.002674): 0.92806619 13 nodes
+[BSG_path] new best_solution_found (1.003102): 0.9306198 11 nodes
+[DoubleEffort] new best_solution_found (1.027668): 0.9306198
+beams/max_level_size:11/121
+[BSG_path] new best_solution_found (2.11352): 0.93158814 20 nodes
+[BSG_path] new best_solution_found (2.208549): 0.93229974 13 nodes
+[BSG_path] new best_solution_found (2.219574): 0.93230499 15 nodes
+[BSG_path] new best_solution_found (2.222384): 0.93425012 14 nodes
+[BSG_path] new best_solution_found (2.296807): 0.93699452 17 nodes
+[DoubleEffort] new best_solution_found (2.312586): 0.93699452
+beams/max_level_size:16/256
+beams/max_level_size:23/529
+% volume utilization
+93.699452
+
+=== BR3  instance 44 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR3.txt
+Instance:45
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.037156): 0.91397286 9 nodes
+[BSG_path] new best_solution_found (0.07621): 0.92352851 16 nodes
+[BSG_path] new best_solution_found (0.116162): 0.93077796 14 nodes
+[BSG_path] new best_solution_found (0.179326): 0.93472297 10 nodes
+[BSG_path] new best_solution_found (0.565562): 0.93498688 13 nodes
+[BSG_path] new best_solution_found (0.599639): 0.93684364 11 nodes
+[BSG_path] new best_solution_found (0.637441): 0.93813129 12 nodes
+[DoubleEffort] new best_solution_found (0.646317): 0.93813129
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (1.21618): 0.94116991 9 nodes
+[BSG_path] new best_solution_found (1.960276): 0.9426804 12 nodes
+[BSG_path] new best_solution_found (1.966857): 0.94419089 10 nodes
+[DoubleEffort] new best_solution_found (1.988424): 0.94419089
+beams/max_level_size:8/64
+[BSG_path] new best_solution_found (4.406445): 0.94856831 17 nodes
+[BSG_path] new best_solution_found (4.664393): 0.94928118 18 nodes
+[BSG_path] new best_solution_found (4.697797): 0.94957281 18 nodes
+[DoubleEffort] new best_solution_found (4.700411): 0.94957281
+beams/max_level_size:11/121
+[BSG_path] new best_solution_found (9.406987): 0.94998378 13 nodes
+[DoubleEffort] new best_solution_found (9.500729): 0.94998378
+beams/max_level_size:16/256
+% volume utilization
+94.998378
+
+=== BR3  instance 45 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR3.txt
+Instance:46
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.02548): 0.92939399 11 nodes
+[BSG_path] new best_solution_found (0.047369): 0.9378601 8 nodes
+[BSG_path] new best_solution_found (0.104038): 0.94021859 11 nodes
+[BSG_path] new best_solution_found (0.322372): 0.94096735 10 nodes
+[BSG_path] new best_solution_found (0.33339): 0.94380049 11 nodes
+[DoubleEffort] new best_solution_found (0.349819): 0.94380049
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (1.082444): 0.94629051 14 nodes
+[DoubleEffort] new best_solution_found (1.090117): 0.94629051
+beams/max_level_size:8/64
+[BSG_path] new best_solution_found (2.307081): 0.94768595 11 nodes
+[BSG_path] new best_solution_found (2.33347): 0.94847931 13 nodes
+[DoubleEffort] new best_solution_found (2.338581): 0.94847931
+beams/max_level_size:11/121
+[BSG_path] new best_solution_found (4.460357): 0.94876007 11 nodes
+[BSG_path] new best_solution_found (4.460872): 0.94916028 11 nodes
+[BSG_path] new best_solution_found (4.622172): 0.94957125 11 nodes
+[BSG_path] new best_solution_found (4.654036): 0.9532799 16 nodes
+[DoubleEffort] new best_solution_found (4.697813): 0.9532799
+beams/max_level_size:16/256
+[BSG_path] new best_solution_found (9.204748): 0.95383172 11 nodes
+[BSG_path] new best_solution_found (9.250094): 0.95432358 16 nodes
+[BSG_path] new best_solution_found (9.348524): 0.95445034 17 nodes
+[BSG_path] new best_solution_found (9.356918): 0.95473383 12 nodes
+[DoubleEffort] new best_solution_found (9.438001): 0.95473383
+beams/max_level_size:23/529
+% volume utilization
+95.473383
+
+=== BR4  instance 42 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR4.txt
+Instance:43
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:7436
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.016208): 0.88807748 7 nodes
+[BSG_path] new best_solution_found (0.022828): 0.9296921 6 nodes
+[BSG_path] new best_solution_found (0.0849): 0.93704773 7 nodes
+[BSG_path] new best_solution_found (0.097155): 0.93808862 7 nodes
+[DoubleEffort] new best_solution_found (0.107576): 0.93808862
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (0.30494): 0.93979552 9 nodes
+[BSG_path] new best_solution_found (0.311634): 0.94070932 11 nodes
+[BSG_path] new best_solution_found (0.314978): 0.94150308 9 nodes
+[BSG_path] new best_solution_found (0.323174): 0.94229911 11 nodes
+[BSG_path] new best_solution_found (0.326981): 0.94287046 13 nodes
+[BSG_path] new best_solution_found (0.332876): 0.94477604 14 nodes
+[DoubleEffort] new best_solution_found (0.335792): 0.94477604
+beams/max_level_size:8/64
+[BSG_path] new best_solution_found (0.814419): 0.9459264 10 nodes
+[DoubleEffort] new best_solution_found (0.826208): 0.9459264
+beams/max_level_size:11/121
+[BSG_path] new best_solution_found (2.090145): 0.94729711 11 nodes
+[DoubleEffort] new best_solution_found (2.13397): 0.94729711
+beams/max_level_size:16/256
+[BSG_path] new best_solution_found (4.049087): 0.94832045 11 nodes
+[BSG_path] new best_solution_found (4.481543): 0.94878719 11 nodes
+[BSG_path] new best_solution_found (4.626776): 0.9493755 13 nodes
+[DoubleEffort] new best_solution_found (4.650803): 0.9493755
+beams/max_level_size:23/529
+[BSG_path] new best_solution_found (9.83599): 0.94940661 20 nodes
+[DoubleEffort] new best_solution_found (9.979669): 0.94940661
+beams/max_level_size:33/1089
+% volume utilization
+94.940661
+
+=== BR4  instance 43 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR4.txt
+Instance:44
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.020916): 0.8912616 11 nodes
+[BSG_path] new best_solution_found (0.027163): 0.91208197 14 nodes
+[BSG_path] new best_solution_found (0.208092): 0.91633533 12 nodes
+[BSG_path] new best_solution_found (0.214987): 0.92010796 17 nodes
+[BSG_path] new best_solution_found (0.239052): 0.92215475 13 nodes
+[BSG_path] new best_solution_found (0.240524): 0.92308055 15 nodes
+[BSG_path] new best_solution_found (0.242593): 0.92460553 15 nodes
+[BSG_path] new best_solution_found (0.242882): 0.92800484 15 nodes
+[BSG_path] new best_solution_found (0.243152): 0.93087859 16 nodes
+[BSG_path] new best_solution_found (0.250415): 0.93092249 17 nodes
+[BSG_path] new best_solution_found (0.252628): 0.93356629 14 nodes
+[BSG_path] new best_solution_found (0.253258): 0.93409186 15 nodes
+[DoubleEffort] new best_solution_found (0.256384): 0.93409186
+beams/max_level_size:6/36
+beams/max_level_size:8/64
+beams/max_level_size:11/121
+[BSG_path] new best_solution_found (2.917895): 0.93812856 14 nodes
+[BSG_path] new best_solution_found (3.117005): 0.93879178 14 nodes
+[BSG_path] new best_solution_found (3.184999): 0.93944822 16 nodes
+[BSG_path] new best_solution_found (3.185801): 0.93952994 16 nodes
+[BSG_path] new best_solution_found (3.19306): 0.94129909 17 nodes
+[BSG_path] new best_solution_found (3.198109): 0.94513782 18 nodes
+[DoubleEffort] new best_solution_found (3.304332): 0.94513782
+beams/max_level_size:16/256
+[BSG_path] new best_solution_found (4.321355): 0.94805923 15 nodes
+[BSG_path] new best_solution_found (6.828926): 0.94810313 16 nodes
+[BSG_path] new best_solution_found (6.93168): 0.94931079 15 nodes
+[DoubleEffort] new best_solution_found (6.951317): 0.94931079
+beams/max_level_size:23/529
+% volume utilization
+94.931079
+
+=== BR4  instance 44 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR4.txt
+Instance:45
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.041013): 0.92307756 16 nodes
+[BSG_path] new best_solution_found (0.088105): 0.93729838 13 nodes
+[BSG_path] new best_solution_found (0.79628): 0.94103445 17 nodes
+[BSG_path] new best_solution_found (0.828685): 0.94545385 15 nodes
+[BSG_path] new best_solution_found (0.98571): 0.94633069 15 nodes
+[DoubleEffort] new best_solution_found (1.052517): 0.94633069
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (2.485959): 0.94702462 19 nodes
+[BSG_path] new best_solution_found (3.179112): 0.95493592 21 nodes
+[BSG_path] new best_solution_found (3.279787): 0.95661956 22 nodes
+[BSG_path] new best_solution_found (3.363977): 0.95692079 23 nodes
+[DoubleEffort] new best_solution_found (3.36575): 0.95692079
+beams/max_level_size:8/64
+beams/max_level_size:11/121
+% volume utilization
+95.692079
+
+=== BR4  instance 45 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR4.txt
+Instance:46
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.030904): 0.88639006 9 nodes
+[BSG_path] new best_solution_found (0.040689): 0.92012804 14 nodes
+[BSG_path] new best_solution_found (0.049988): 0.94589696 10 nodes
+[DoubleEffort] new best_solution_found (0.260296): 0.94589696
+beams/max_level_size:6/36
+beams/max_level_size:8/64
+beams/max_level_size:11/121
+[BSG_path] new best_solution_found (3.187088): 0.94708697 12 nodes
+[DoubleEffort] new best_solution_found (3.214343): 0.94708697
+beams/max_level_size:16/256
+[BSG_path] new best_solution_found (6.81366): 0.94995317 13 nodes
+[BSG_path] new best_solution_found (7.135212): 0.95043759 17 nodes
+[BSG_path] new best_solution_found (7.188219): 0.95176037 19 nodes
+[BSG_path] new best_solution_found (7.552382): 0.95408942 14 nodes
+[BSG_path] new best_solution_found (7.903451): 0.95480375 14 nodes
+[BSG_path] new best_solution_found (8.113563): 0.96061997 14 nodes
+[DoubleEffort] new best_solution_found (8.226914): 0.96061997
+beams/max_level_size:23/529
+% volume utilization
+96.061997
+
+=== BR5  instance 42 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR5.txt
+Instance:43
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.026114): 0.88511839 13 nodes
+[BSG_path] new best_solution_found (0.03935): 0.89263194 11 nodes
+[BSG_path] new best_solution_found (0.048081): 0.91818095 12 nodes
+[BSG_path] new best_solution_found (0.354792): 0.91822589 14 nodes
+[BSG_path] new best_solution_found (0.356275): 0.91850931 13 nodes
+[DoubleEffort] new best_solution_found (0.358727): 0.91850931
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (0.81755): 0.92377617 14 nodes
+[BSG_path] new best_solution_found (1.07235): 0.92582798 14 nodes
+[BSG_path] new best_solution_found (1.085289): 0.92819178 15 nodes
+[BSG_path] new best_solution_found (1.089846): 0.93126793 15 nodes
+[BSG_path] new best_solution_found (1.09054): 0.93409594 15 nodes
+[BSG_path] new best_solution_found (1.098924): 0.93460708 14 nodes
+[DoubleEffort] new best_solution_found (1.135171): 0.93460708
+beams/max_level_size:8/64
+beams/max_level_size:11/121
+[BSG_path] new best_solution_found (5.143333): 0.93494527 18 nodes
+[BSG_path] new best_solution_found (5.145734): 0.93517705 16 nodes
+[BSG_path] new best_solution_found (5.156948): 0.93740446 16 nodes
+[BSG_path] new best_solution_found (5.187745): 0.94149178 17 nodes
+[BSG_path] new best_solution_found (5.260569): 0.94458953 16 nodes
+[BSG_path] new best_solution_found (5.297956): 0.9452013 17 nodes
+[BSG_path] new best_solution_found (5.345589): 0.94619427 19 nodes
+[DoubleEffort] new best_solution_found (5.44406): 0.94619427
+beams/max_level_size:16/256
+% volume utilization
+94.619427
+
+=== BR5  instance 43 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR5.txt
+Instance:44
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.027821): 0.89038772 16 nodes
+[BSG_path] new best_solution_found (0.041341): 0.91018291 14 nodes
+[BSG_path] new best_solution_found (0.061734): 0.92787566 13 nodes
+[BSG_path] new best_solution_found (0.347997): 0.93409109 14 nodes
+[BSG_path] new best_solution_found (0.508484): 0.9341874 15 nodes
+[BSG_path] new best_solution_found (0.51006): 0.93430671 15 nodes
+[DoubleEffort] new best_solution_found (0.511778): 0.93430671
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (1.571508): 0.93497475 16 nodes
+[DoubleEffort] new best_solution_found (1.680437): 0.93497475
+beams/max_level_size:8/64
+beams/max_level_size:11/121
+[BSG_path] new best_solution_found (6.638908): 0.93720908 14 nodes
+[BSG_path] new best_solution_found (6.961539): 0.94032809 18 nodes
+[BSG_path] new best_solution_found (7.354462): 0.94387024 16 nodes
+[BSG_path] new best_solution_found (7.578405): 0.94562952 19 nodes
+[BSG_path] new best_solution_found (7.675762): 0.94840397 23 nodes
+[BSG_path] new best_solution_found (7.929217): 0.94910328 24 nodes
+[BSG_path] new best_solution_found (7.976503): 0.94948175 24 nodes
+[BSG_path] new best_solution_found (8.011263): 0.94974616 24 nodes
+[BSG_path] new best_solution_found (8.084833): 0.95057349 26 nodes
+[DoubleEffort] new best_solution_found (8.111583): 0.95057349
+beams/max_level_size:16/256
+% volume utilization
+95.057349
+
+=== BR5  instance 44 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR5.txt
+Instance:45
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.041655): 0.92247469 15 nodes
+[BSG_path] new best_solution_found (0.067242): 0.93074037 18 nodes
+[BSG_path] new best_solution_found (0.113293): 0.93372452 22 nodes
+[BSG_path] new best_solution_found (0.145216): 0.93482267 17 nodes
+[BSG_path] new best_solution_found (0.180107): 0.93545724 17 nodes
+[BSG_path] new best_solution_found (0.207082): 0.93706644 20 nodes
+[BSG_path] new best_solution_found (0.514308): 0.94141275 21 nodes
+[BSG_path] new best_solution_found (1.133385): 0.94316894 22 nodes
+[BSG_path] new best_solution_found (1.712003): 0.94530542 17 nodes
+[BSG_path] new best_solution_found (1.720213): 0.94764377 17 nodes
+[BSG_path] new best_solution_found (1.73313): 0.94925626 21 nodes
+[BSG_path] new best_solution_found (1.743602): 0.94960511 17 nodes
+[BSG_path] new best_solution_found (1.74441): 0.95020625 21 nodes
+[DoubleEffort] new best_solution_found (1.747763): 0.95020625
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (5.524895): 0.95110048 22 nodes
+[BSG_path] new best_solution_found (5.540691): 0.95227856 23 nodes
+[BSG_path] new best_solution_found (5.645873): 0.95281655 23 nodes
+[BSG_path] new best_solution_found (5.789834): 0.9550447 27 nodes
+[BSG_path] new best_solution_found (5.809718): 0.95564716 26 nodes
+[BSG_path] new best_solution_found (5.813376): 0.95589602 22 nodes
+[BSG_path] new best_solution_found (5.842233): 0.95596917 22 nodes
+[BSG_path] new best_solution_found (5.85277): 0.95599469 26 nodes
+[BSG_path] new best_solution_found (5.857784): 0.95702957 27 nodes
+[DoubleEffort] new best_solution_found (5.874802): 0.95702957
+beams/max_level_size:8/64
+% volume utilization
+95.702957
+
+=== BR5  instance 45 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR5.txt
+Instance:46
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.029723): 0.91866348 12 nodes
+[BSG_path] new best_solution_found (0.039922): 0.92371718 14 nodes
+[BSG_path] new best_solution_found (0.068487): 0.92531348 13 nodes
+[BSG_path] new best_solution_found (0.124775): 0.92871824 13 nodes
+[BSG_path] new best_solution_found (0.146191): 0.93001424 15 nodes
+[BSG_path] new best_solution_found (0.26346): 0.93415826 9 nodes
+[BSG_path] new best_solution_found (0.299011): 0.9356745 9 nodes
+[BSG_path] new best_solution_found (0.332329): 0.94097672 9 nodes
+[BSG_path] new best_solution_found (0.350361): 0.94202868 12 nodes
+[BSG_path] new best_solution_found (0.358971): 0.94482014 13 nodes
+[DoubleEffort] new best_solution_found (0.370845): 0.94482014
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (1.110749): 0.9451923 14 nodes
+[BSG_path] new best_solution_found (1.221966): 0.9482267 17 nodes
+[BSG_path] new best_solution_found (1.245938): 0.94982752 19 nodes
+[DoubleEffort] new best_solution_found (1.268991): 0.94982752
+beams/max_level_size:8/64
+beams/max_level_size:11/121
+[BSG_path] new best_solution_found (5.741257): 0.94984912 17 nodes
+[BSG_path] new best_solution_found (5.75223): 0.95281532 16 nodes
+[DoubleEffort] new best_solution_found (5.772583): 0.95281532
+beams/max_level_size:16/256
+% volume utilization
+95.281532
+
+=== BR6  instance 42 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR6.txt
+Instance:43
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.025579): 0.88410096 12 nodes
+[BSG_path] new best_solution_found (0.034939): 0.90272778 18 nodes
+[BSG_path] new best_solution_found (0.04418): 0.9167929 19 nodes
+[BSG_path] new best_solution_found (0.125677): 0.93142007 16 nodes
+[BSG_path] new best_solution_found (0.212001): 0.93269294 20 nodes
+[BSG_path] new best_solution_found (0.242415): 0.93878753 18 nodes
+[BSG_path] new best_solution_found (0.309112): 0.94033943 17 nodes
+[BSG_path] new best_solution_found (0.320822): 0.94105223 18 nodes
+[BSG_path] new best_solution_found (0.339734): 0.94371049 17 nodes
+[BSG_path] new best_solution_found (0.344137): 0.94785391 17 nodes
+[DoubleEffort] new best_solution_found (0.354697): 0.94785391
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (1.098836): 0.94800546 18 nodes
+[BSG_path] new best_solution_found (1.134499): 0.94802367 19 nodes
+[BSG_path] new best_solution_found (1.142502): 0.94883505 20 nodes
+[DoubleEffort] new best_solution_found (1.149627): 0.94883505
+beams/max_level_size:8/64
+[BSG_path] new best_solution_found (2.609662): 0.94928856 23 nodes
+[BSG_path] new best_solution_found (2.697171): 0.95041307 23 nodes
+[DoubleEffort] new best_solution_found (2.769361): 0.95041307
+beams/max_level_size:11/121
+[BSG_path] new best_solution_found (5.226322): 0.95065867 17 nodes
+[DoubleEffort] new best_solution_found (5.340352): 0.95065867
+beams/max_level_size:16/256
+% volume utilization
+95.065867
+
+=== BR6  instance 43 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR6.txt
+Instance:44
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.034228): 0.88932173 18 nodes
+[BSG_path] new best_solution_found (0.059953): 0.89912292 22 nodes
+[BSG_path] new best_solution_found (0.081896): 0.91285324 17 nodes
+[BSG_path] new best_solution_found (0.14199): 0.91665511 16 nodes
+[BSG_path] new best_solution_found (0.286996): 0.9327376 20 nodes
+[BSG_path] new best_solution_found (0.411353): 0.93452104 21 nodes
+[BSG_path] new best_solution_found (1.136877): 0.93621292 20 nodes
+[BSG_path] new best_solution_found (1.278833): 0.93723434 23 nodes
+[DoubleEffort] new best_solution_found (1.314419): 0.93723434
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (2.459555): 0.93800919 18 nodes
+[BSG_path] new best_solution_found (3.429907): 0.94470256 21 nodes
+[BSG_path] new best_solution_found (4.037341): 0.94492406 21 nodes
+[BSG_path] new best_solution_found (4.039078): 0.94721342 20 nodes
+[BSG_path] new best_solution_found (4.132267): 0.94861557 20 nodes
+[DoubleEffort] new best_solution_found (4.158561): 0.94861557
+beams/max_level_size:8/64
+[BSG_path] new best_solution_found (9.021769): 0.94920142 22 nodes
+[BSG_path] new best_solution_found (9.055519): 0.95178989 23 nodes
+[DoubleEffort] new best_solution_found (9.098035): 0.95178989
+beams/max_level_size:11/121
+% volume utilization
+95.178989
+
+=== BR6  instance 44 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR6.txt
+Instance:45
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.049673): 0.92774711 17 nodes
+[BSG_path] new best_solution_found (0.087824): 0.93059371 21 nodes
+[BSG_path] new best_solution_found (0.875079): 0.93311355 17 nodes
+[BSG_path] new best_solution_found (2.059057): 0.93506083 20 nodes
+[BSG_path] new best_solution_found (2.083133): 0.93628909 24 nodes
+[BSG_path] new best_solution_found (2.248748): 0.93909318 18 nodes
+[BSG_path] new best_solution_found (2.268801): 0.93987309 23 nodes
+[BSG_path] new best_solution_found (2.293767): 0.94109776 21 nodes
+[BSG_path] new best_solution_found (2.337545): 0.94271111 22 nodes
+[DoubleEffort] new best_solution_found (2.342074): 0.94271111
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (6.243079): 0.94361291 22 nodes
+[BSG_path] new best_solution_found (6.643169): 0.94376436 23 nodes
+[BSG_path] new best_solution_found (6.661768): 0.9458829 20 nodes
+[BSG_path] new best_solution_found (6.756894): 0.94904007 18 nodes
+[BSG_path] new best_solution_found (6.802563): 0.94906845 20 nodes
+[DoubleEffort] new best_solution_found (6.813371): 0.94906845
+beams/max_level_size:8/64
+% volume utilization
+94.906845
+
+=== BR6  instance 45 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR6.txt
+Instance:46
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.03279): 0.90279512 13 nodes
+[BSG_path] new best_solution_found (0.044487): 0.90328572 13 nodes
+[BSG_path] new best_solution_found (0.055484): 0.91887993 16 nodes
+[BSG_path] new best_solution_found (0.131598): 0.92316214 16 nodes
+[BSG_path] new best_solution_found (0.21558): 0.92339066 16 nodes
+[BSG_path] new best_solution_found (0.241901): 0.92699496 18 nodes
+[BSG_path] new best_solution_found (0.343411): 0.93437644 16 nodes
+[BSG_path] new best_solution_found (0.363273): 0.93859623 18 nodes
+[BSG_path] new best_solution_found (0.495206): 0.9406616 19 nodes
+[BSG_path] new best_solution_found (0.54352): 0.94225703 21 nodes
+[BSG_path] new best_solution_found (0.585293): 0.94363531 20 nodes
+[DoubleEffort] new best_solution_found (0.60421): 0.94363531
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (1.820346): 0.94477504 22 nodes
+[BSG_path] new best_solution_found (1.839951): 0.94793992 19 nodes
+[BSG_path] new best_solution_found (1.851434): 0.94909447 19 nodes
+[DoubleEffort] new best_solution_found (1.855755): 0.94909447
+beams/max_level_size:8/64
+[BSG_path] new best_solution_found (4.274925): 0.94987899 18 nodes
+[BSG_path] new best_solution_found (4.297772): 0.9500336 20 nodes
+[BSG_path] new best_solution_found (4.298049): 0.9508472 19 nodes
+[BSG_path] new best_solution_found (4.299049): 0.95183987 20 nodes
+[DoubleEffort] new best_solution_found (4.349065): 0.95183987
+beams/max_level_size:11/121
+beams/max_level_size:16/256
+% volume utilization
+95.183987
+
+=== BR7  instance 42 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR7.txt
+Instance:43
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:9707
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.027307): 0.88712227 17 nodes
+[BSG_path] new best_solution_found (0.037364): 0.89448448 18 nodes
+[BSG_path] new best_solution_found (0.043423): 0.9012377 17 nodes
+[BSG_path] new best_solution_found (0.086822): 0.90661311 18 nodes
+[BSG_path] new best_solution_found (0.181496): 0.91736021 17 nodes
+[BSG_path] new best_solution_found (0.187021): 0.91854613 18 nodes
+[BSG_path] new best_solution_found (0.292819): 0.92752664 19 nodes
+[BSG_path] new best_solution_found (0.299339): 0.93036489 20 nodes
+[BSG_path] new best_solution_found (0.331055): 0.93417079 16 nodes
+[BSG_path] new best_solution_found (0.34151): 0.93478063 18 nodes
+[BSG_path] new best_solution_found (0.376708): 0.93496162 18 nodes
+[BSG_path] new best_solution_found (0.383882): 0.93532534 17 nodes
+[BSG_path] new best_solution_found (0.385721): 0.93639208 16 nodes
+[BSG_path] new best_solution_found (0.404789): 0.93723317 17 nodes
+[BSG_path] new best_solution_found (0.406724): 0.93751659 18 nodes
+[DoubleEffort] new best_solution_found (0.4085): 0.93751659
+beams/max_level_size:6/36
+beams/max_level_size:8/64
+[BSG_path] new best_solution_found (2.639134): 0.93759775 26 nodes
+[BSG_path] new best_solution_found (2.773774): 0.93763045 21 nodes
+[BSG_path] new best_solution_found (2.806605): 0.94166812 24 nodes
+[BSG_path] new best_solution_found (2.807688): 0.94214204 25 nodes
+[BSG_path] new best_solution_found (3.126397): 0.94333315 27 nodes
+[BSG_path] new best_solution_found (3.204583): 0.94343611 25 nodes
+[BSG_path] new best_solution_found (3.221818): 0.94353774 27 nodes
+[BSG_path] new best_solution_found (3.222536): 0.9436615 27 nodes
+[DoubleEffort] new best_solution_found (3.262084): 0.9436615
+beams/max_level_size:11/121
+[BSG_path] new best_solution_found (5.965445): 0.94469176 22 nodes
+[BSG_path] new best_solution_found (6.194899): 0.94580005 20 nodes
+[BSG_path] new best_solution_found (6.219441): 0.94595638 22 nodes
+[BSG_path] new best_solution_found (6.235182): 0.9479913 21 nodes
+[BSG_path] new best_solution_found (6.318542): 0.94831773 22 nodes
+[BSG_path] new best_solution_found (6.323613): 0.94860188 22 nodes
+[DoubleEffort] new best_solution_found (6.331312): 0.94860188
+beams/max_level_size:16/256
+% volume utilization
+94.860188
+
+=== BR7  instance 43 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR7.txt
+Instance:44
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.056953): 0.92194481 20 nodes
+[BSG_path] new best_solution_found (0.290411): 0.9251828 27 nodes
+[BSG_path] new best_solution_found (0.472712): 0.92774342 26 nodes
+[BSG_path] new best_solution_found (0.549452): 0.93283415 25 nodes
+[BSG_path] new best_solution_found (0.73772): 0.93938943 24 nodes
+[BSG_path] new best_solution_found (1.284019): 0.94146533 28 nodes
+[BSG_path] new best_solution_found (2.159922): 0.94341265 29 nodes
+[BSG_path] new best_solution_found (2.240545): 0.94437653 26 nodes
+[BSG_path] new best_solution_found (2.417566): 0.94538878 27 nodes
+[BSG_path] new best_solution_found (2.516458): 0.9454358 26 nodes
+[BSG_path] new best_solution_found (2.594588): 0.94870527 27 nodes
+[BSG_path] new best_solution_found (2.64116): 0.94968793 27 nodes
+[DoubleEffort] new best_solution_found (2.64653): 0.94968793
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (8.297542): 0.95089702 26 nodes
+[BSG_path] new best_solution_found (8.410413): 0.95173498 29 nodes
+[BSG_path] new best_solution_found (8.565916): 0.95270386 30 nodes
+[DoubleEffort] new best_solution_found (8.583293): 0.95270386
+beams/max_level_size:8/64
+% volume utilization
+95.270386
+
+=== BR7  instance 44 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR7.txt
+Instance:45
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.062258): 0.895537 25 nodes
+[BSG_path] new best_solution_found (0.154194): 0.89691644 24 nodes
+[BSG_path] new best_solution_found (0.194403): 0.89855468 25 nodes
+[BSG_path] new best_solution_found (0.226789): 0.91926418 24 nodes
+[BSG_path] new best_solution_found (0.261371): 0.9281067 27 nodes
+[BSG_path] new best_solution_found (0.526169): 0.93128916 27 nodes
+[BSG_path] new best_solution_found (1.373859): 0.93373938 22 nodes
+[BSG_path] new best_solution_found (1.836699): 0.93603788 28 nodes
+[BSG_path] new best_solution_found (1.996118): 0.93720103 25 nodes
+[BSG_path] new best_solution_found (2.039562): 0.93841029 29 nodes
+[BSG_path] new best_solution_found (2.06757): 0.9387309 29 nodes
+[BSG_path] new best_solution_found (2.07084): 0.94085655 30 nodes
+[DoubleEffort] new best_solution_found (2.074338): 0.94085655
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (6.079915): 0.94282294 24 nodes
+[BSG_path] new best_solution_found (6.086489): 0.94315438 24 nodes
+[DoubleEffort] new best_solution_found (6.158254): 0.94315438
+beams/max_level_size:8/64
+% volume utilization
+94.315438
+
+=== BR7  instance 45 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR7.txt
+Instance:46
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.039028): 0.91348518 22 nodes
+[BSG_path] new best_solution_found (0.406644): 0.91868581 18 nodes
+[BSG_path] new best_solution_found (0.457024): 0.93150179 23 nodes
+[BSG_path] new best_solution_found (0.530251): 0.93226385 20 nodes
+[BSG_path] new best_solution_found (0.601696): 0.93611009 17 nodes
+[DoubleEffort] new best_solution_found (0.71987): 0.93611009
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (1.73859): 0.93753833 22 nodes
+[BSG_path] new best_solution_found (1.856819): 0.94052241 19 nodes
+[BSG_path] new best_solution_found (1.950403): 0.94122727 21 nodes
+[BSG_path] new best_solution_found (2.056708): 0.94230083 17 nodes
+[BSG_path] new best_solution_found (2.255045): 0.94358589 20 nodes
+[BSG_path] new best_solution_found (2.255495): 0.94418976 20 nodes
+[BSG_path] new best_solution_found (2.306581): 0.94657696 20 nodes
+[DoubleEffort] new best_solution_found (2.323387): 0.94657696
+beams/max_level_size:8/64
+[BSG_path] new best_solution_found (5.245126): 0.94833019 20 nodes
+[BSG_path] new best_solution_found (5.319638): 0.94861401 22 nodes
+[BSG_path] new best_solution_found (5.384778): 0.94880198 21 nodes
+[BSG_path] new best_solution_found (5.393202): 0.95024241 21 nodes
+[BSG_path] new best_solution_found (5.393865): 0.95209002 23 nodes
+[BSG_path] new best_solution_found (5.42454): 0.95239358 23 nodes
+[BSG_path] new best_solution_found (5.429054): 0.95362663 23 nodes
+[DoubleEffort] new best_solution_found (5.558665): 0.95362663
+beams/max_level_size:11/121
+% volume utilization
+95.362663
+
+=== BR8  instance 42 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR8.txt
+Instance:43
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.033755): 0.91646787 20 nodes
+[BSG_path] new best_solution_found (0.122202): 0.91835909 20 nodes
+[BSG_path] new best_solution_found (0.193021): 0.92552774 26 nodes
+[BSG_path] new best_solution_found (0.301268): 0.92783445 22 nodes
+[BSG_path] new best_solution_found (0.38316): 0.93000297 21 nodes
+[BSG_path] new best_solution_found (0.783117): 0.93117414 23 nodes
+[BSG_path] new best_solution_found (0.859883): 0.93227631 23 nodes
+[BSG_path] new best_solution_found (0.862529): 0.93447508 22 nodes
+[BSG_path] new best_solution_found (0.871048): 0.936085 24 nodes
+[BSG_path] new best_solution_found (0.885221): 0.93857343 24 nodes
+[DoubleEffort] new best_solution_found (0.90204): 0.93857343
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (2.632981): 0.93944171 25 nodes
+[BSG_path] new best_solution_found (2.920865): 0.9397692 24 nodes
+[BSG_path] new best_solution_found (2.958532): 0.94254225 28 nodes
+[BSG_path] new best_solution_found (2.989996): 0.94279762 25 nodes
+[BSG_path] new best_solution_found (3.038075): 0.94503187 26 nodes
+[DoubleEffort] new best_solution_found (3.199353): 0.94503187
+beams/max_level_size:8/64
+[BSG_path] new best_solution_found (8.111666): 0.94620151 22 nodes
+[BSG_path] new best_solution_found (8.118472): 0.94640231 22 nodes
+[BSG_path] new best_solution_found (8.18623): 0.94668647 21 nodes
+[BSG_path] new best_solution_found (8.305054): 0.94676982 21 nodes
+[DoubleEffort] new best_solution_found (8.309374): 0.94676982
+beams/max_level_size:11/121
+% volume utilization
+94.676982
+
+=== BR8  instance 43 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR8.txt
+Instance:44
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.072097): 0.90349895 26 nodes
+[BSG_path] new best_solution_found (0.115671): 0.93171808 33 nodes
+[BSG_path] new best_solution_found (0.803595): 0.94175978 31 nodes
+[BSG_path] new best_solution_found (2.276044): 0.94399943 30 nodes
+[BSG_path] new best_solution_found (2.388249): 0.94420913 33 nodes
+[BSG_path] new best_solution_found (2.410013): 0.94522819 27 nodes
+[BSG_path] new best_solution_found (2.782049): 0.9468744 30 nodes
+[BSG_path] new best_solution_found (3.371674): 0.94948058 25 nodes
+[BSG_path] new best_solution_found (3.511711): 0.95018192 34 nodes
+[BSG_path] new best_solution_found (3.663043): 0.95163591 34 nodes
+[BSG_path] new best_solution_found (3.804011): 0.95178713 29 nodes
+[BSG_path] new best_solution_found (3.841865): 0.95203299 28 nodes
+[BSG_path] new best_solution_found (3.846418): 0.95357013 30 nodes
+[BSG_path] new best_solution_found (3.85212): 0.95400384 30 nodes
+[BSG_path] new best_solution_found (3.940409): 0.95585943 33 nodes
+[BSG_path] new best_solution_found (4.029338): 0.95611433 31 nodes
+[DoubleEffort] new best_solution_found (4.046724): 0.95611433
+beams/max_level_size:6/36
+% volume utilization
+95.611433
+
+=== BR8  instance 44 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR8.txt
+Instance:45
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.04586): 0.92075377 28 nodes
+[BSG_path] new best_solution_found (0.128362): 0.93183453 26 nodes
+[BSG_path] new best_solution_found (0.370145): 0.93247126 26 nodes
+[BSG_path] new best_solution_found (0.495456): 0.93363868 25 nodes
+[BSG_path] new best_solution_found (0.513094): 0.9368906 24 nodes
+[BSG_path] new best_solution_found (1.015125): 0.93733523 26 nodes
+[BSG_path] new best_solution_found (1.024597): 0.94422415 27 nodes
+[BSG_path] new best_solution_found (1.297089): 0.94702136 32 nodes
+[BSG_path] new best_solution_found (1.852516): 0.94926107 33 nodes
+[BSG_path] new best_solution_found (1.854042): 0.95040512 32 nodes
+[DoubleEffort] new best_solution_found (2.006589): 0.95040512
+beams/max_level_size:6/36
+beams/max_level_size:8/64
+% volume utilization
+95.040512
+
+=== BR8  instance 45 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR8.txt
+Instance:46
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.039246): 0.89493835 25 nodes
+[BSG_path] new best_solution_found (0.057455): 0.90155768 17 nodes
+[BSG_path] new best_solution_found (0.075071): 0.90919114 23 nodes
+[BSG_path] new best_solution_found (0.095749): 0.92725226 24 nodes
+[BSG_path] new best_solution_found (0.262682): 0.93324947 28 nodes
+[BSG_path] new best_solution_found (0.462646): 0.94118909 30 nodes
+[BSG_path] new best_solution_found (0.605403): 0.95284241 30 nodes
+[BSG_path] new best_solution_found (1.474452): 0.95292706 30 nodes
+[BSG_path] new best_solution_found (1.501611): 0.95650896 31 nodes
+[DoubleEffort] new best_solution_found (1.525049): 0.95650896
+beams/max_level_size:6/36
+beams/max_level_size:8/64
+% volume utilization
+95.650896
+
+=== BR9  instance 42 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR9.txt
+Instance:43
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.040952): 0.92446106 28 nodes
+[BSG_path] new best_solution_found (0.082755): 0.92777762 25 nodes
+[BSG_path] new best_solution_found (0.230373): 0.93054037 27 nodes
+[BSG_path] new best_solution_found (0.922601): 0.9327947 27 nodes
+[BSG_path] new best_solution_found (0.996016): 0.94508458 27 nodes
+[BSG_path] new best_solution_found (1.187247): 0.94567356 29 nodes
+[BSG_path] new best_solution_found (1.230379): 0.94702937 28 nodes
+[BSG_path] new best_solution_found (1.251299): 0.94724048 28 nodes
+[BSG_path] new best_solution_found (1.253901): 0.94766461 28 nodes
+[DoubleEffort] new best_solution_found (1.255003): 0.94766461
+beams/max_level_size:6/36
+beams/max_level_size:8/64
+beams/max_level_size:11/121
+% volume utilization
+94.766461
+
+=== BR9  instance 43 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR9.txt
+Instance:44
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.095086): 0.9166482 38 nodes
+[BSG_path] new best_solution_found (0.17107): 0.92292634 45 nodes
+[BSG_path] new best_solution_found (0.249971): 0.92755778 44 nodes
+[BSG_path] new best_solution_found (0.507667): 0.93021188 44 nodes
+[BSG_path] new best_solution_found (0.592299): 0.93712938 38 nodes
+[BSG_path] new best_solution_found (2.295623): 0.93990875 42 nodes
+[BSG_path] new best_solution_found (3.188733): 0.9403364 43 nodes
+[BSG_path] new best_solution_found (3.786643): 0.94037565 33 nodes
+[BSG_path] new best_solution_found (4.394458): 0.94058532 44 nodes
+[BSG_path] new best_solution_found (4.481979): 0.94151442 36 nodes
+[BSG_path] new best_solution_found (4.771105): 0.94292234 41 nodes
+[BSG_path] new best_solution_found (7.35889): 0.94394791 40 nodes
+[BSG_path] new best_solution_found (7.450553): 0.94463413 44 nodes
+[BSG_path] new best_solution_found (7.985148): 0.9470772 44 nodes
+[BSG_path] new best_solution_found (8.811547): 0.94918769 44 nodes
+[BSG_path] new best_solution_found (8.979654): 0.95093521 44 nodes
+[BSG_path] new best_solution_found (9.361): 0.95122727 44 nodes
+[BSG_path] new best_solution_found (9.385184): 0.95177015 44 nodes
+[BSG_path] new best_solution_found (9.53922): 0.95222552 40 nodes
+[BSG_path] new best_solution_found (9.848009): 0.95303417 42 nodes
+[BSG_path] new best_solution_found (9.865418): 0.95418021 45 nodes
+[BSG_path] new best_solution_found (9.887101): 0.95495683 47 nodes
+[BSG_path] new best_solution_found (9.888829): 0.95511834 44 nodes
+[BSG_path] new best_solution_found (9.986689): 0.95551197 45 nodes
+[BSG_path] new best_solution_found (9.987323): 0.95559618 45 nodes
+[BSG_path] new best_solution_found (9.997989): 0.95697865 46 nodes
+[DoubleEffort] new best_solution_found (10.000894): 0.95697865
+% volume utilization
+95.697865
+
+=== BR9  instance 44 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR9.txt
+Instance:45
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.044185): 0.91472893 27 nodes
+[BSG_path] new best_solution_found (0.06506): 0.92219686 30 nodes
+[BSG_path] new best_solution_found (0.116684): 0.92703078 30 nodes
+[BSG_path] new best_solution_found (0.298851): 0.92749473 32 nodes
+[BSG_path] new best_solution_found (0.347758): 0.92784033 31 nodes
+[BSG_path] new best_solution_found (0.540058): 0.92882865 34 nodes
+[BSG_path] new best_solution_found (0.562556): 0.93333947 32 nodes
+[BSG_path] new best_solution_found (0.901114): 0.9336757 29 nodes
+[BSG_path] new best_solution_found (0.990358): 0.93370229 32 nodes
+[BSG_path] new best_solution_found (1.012284): 0.93556057 31 nodes
+[BSG_path] new best_solution_found (1.155778): 0.93756704 31 nodes
+[BSG_path] new best_solution_found (1.163067): 0.9376912 35 nodes
+[BSG_path] new best_solution_found (1.329816): 0.94320111 31 nodes
+[BSG_path] new best_solution_found (1.86496): 0.94339081 33 nodes
+[BSG_path] new best_solution_found (1.871485): 0.94346412 32 nodes
+[BSG_path] new best_solution_found (1.871755): 0.94368566 32 nodes
+[BSG_path] new best_solution_found (1.872592): 0.94453822 32 nodes
+[DoubleEffort] new best_solution_found (1.875689): 0.94453822
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (5.192114): 0.945594 34 nodes
+[BSG_path] new best_solution_found (5.331612): 0.94684709 33 nodes
+[BSG_path] new best_solution_found (5.416493): 0.94960541 33 nodes
+[BSG_path] new best_solution_found (5.634991): 0.95027481 33 nodes
+[DoubleEffort] new best_solution_found (5.713104): 0.95027481
+beams/max_level_size:8/64
+% volume utilization
+95.027481
+
+=== BR9  instance 45 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR9.txt
+Instance:46
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.056112): 0.91012136 34 nodes
+[BSG_path] new best_solution_found (0.125658): 0.91644793 30 nodes
+[BSG_path] new best_solution_found (0.489647): 0.92340771 31 nodes
+[BSG_path] new best_solution_found (1.253037): 0.928175 30 nodes
+[BSG_path] new best_solution_found (1.555451): 0.92921596 35 nodes
+[BSG_path] new best_solution_found (1.690166): 0.93192526 34 nodes
+[BSG_path] new best_solution_found (1.697034): 0.93537622 36 nodes
+[BSG_path] new best_solution_found (1.916379): 0.93677065 32 nodes
+[BSG_path] new best_solution_found (2.336486): 0.94000599 39 nodes
+[BSG_path] new best_solution_found (2.517714): 0.94228498 39 nodes
+[BSG_path] new best_solution_found (2.536065): 0.94484806 40 nodes
+[BSG_path] new best_solution_found (2.623359): 0.94622205 39 nodes
+[DoubleEffort] new best_solution_found (2.62785): 0.94622205
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (8.713203): 0.94905413 40 nodes
+[DoubleEffort] new best_solution_found (8.742317): 0.94905413
+beams/max_level_size:8/64
+% volume utilization
+94.905413
+
+=== BR10  instance 42 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR10.txt
+Instance:43
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.05162): 0.92997432 28 nodes
+[BSG_path] new best_solution_found (0.096434): 0.93207485 31 nodes
+[BSG_path] new best_solution_found (0.196084): 0.93348989 34 nodes
+[BSG_path] new best_solution_found (0.371532): 0.93738492 29 nodes
+[BSG_path] new best_solution_found (0.792458): 0.93860607 34 nodes
+[DoubleEffort] new best_solution_found (1.797193): 0.93860607
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (5.127421): 0.93892691 29 nodes
+[BSG_path] new best_solution_found (5.189329): 0.93905719 28 nodes
+[BSG_path] new best_solution_found (5.316034): 0.94063355 28 nodes
+[BSG_path] new best_solution_found (5.374328): 0.9429134 29 nodes
+[DoubleEffort] new best_solution_found (5.396972): 0.9429134
+beams/max_level_size:8/64
+% volume utilization
+94.29134
+
+=== BR10  instance 43 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR10.txt
+Instance:44
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.092957): 0.91611832 36 nodes
+[BSG_path] new best_solution_found (0.176296): 0.9217011 35 nodes
+[BSG_path] new best_solution_found (0.400887): 0.9224518 39 nodes
+[BSG_path] new best_solution_found (0.801409): 0.93402054 41 nodes
+[BSG_path] new best_solution_found (0.884063): 0.93632359 39 nodes
+[BSG_path] new best_solution_found (7.072764): 0.93865559 40 nodes
+[BSG_path] new best_solution_found (7.585829): 0.93890936 40 nodes
+[BSG_path] new best_solution_found (7.602888): 0.94214879 35 nodes
+[BSG_path] new best_solution_found (7.687926): 0.94322544 37 nodes
+[BSG_path] new best_solution_found (7.743178): 0.94353538 39 nodes
+[BSG_path] new best_solution_found (7.781862): 0.94602301 40 nodes
+[BSG_path] new best_solution_found (8.270245): 0.94649068 42 nodes
+[BSG_path] new best_solution_found (8.309928): 0.94700275 41 nodes
+[BSG_path] new best_solution_found (8.333311): 0.94721811 42 nodes
+[BSG_path] new best_solution_found (8.357246): 0.94726819 40 nodes
+[BSG_path] new best_solution_found (8.378832): 0.9474345 41 nodes
+[BSG_path] new best_solution_found (8.383648): 0.94775514 42 nodes
+[DoubleEffort] new best_solution_found (8.389578): 0.94775514
+beams/max_level_size:6/36
+% volume utilization
+94.775514
+
+=== BR10  instance 44 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR10.txt
+Instance:45
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.056427): 0.91329392 38 nodes
+[BSG_path] new best_solution_found (0.158166): 0.91999889 35 nodes
+[BSG_path] new best_solution_found (0.484185): 0.92706847 32 nodes
+[BSG_path] new best_solution_found (0.529083): 0.928666 33 nodes
+[BSG_path] new best_solution_found (0.574203): 0.93639411 31 nodes
+[BSG_path] new best_solution_found (2.32154): 0.94080022 30 nodes
+[BSG_path] new best_solution_found (2.410536): 0.94260516 30 nodes
+[BSG_path] new best_solution_found (2.66387): 0.94379208 29 nodes
+[BSG_path] new best_solution_found (2.682703): 0.9467095 27 nodes
+[BSG_path] new best_solution_found (2.714285): 0.94788592 30 nodes
+[DoubleEffort] new best_solution_found (2.767239): 0.94788592
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (9.043316): 0.94929657 32 nodes
+[BSG_path] new best_solution_found (9.048877): 0.94944496 32 nodes
+[DoubleEffort] new best_solution_found (9.074471): 0.94944496
+beams/max_level_size:8/64
+% volume utilization
+94.944496
+
+=== BR10  instance 45 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR10.txt
+Instance:46
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.051242): 0.92715598 30 nodes
+[BSG_path] new best_solution_found (1.427313): 0.92749556 31 nodes
+[BSG_path] new best_solution_found (1.662105): 0.92953135 31 nodes
+[BSG_path] new best_solution_found (1.672471): 0.93156281 32 nodes
+[BSG_path] new best_solution_found (1.836738): 0.93226113 27 nodes
+[BSG_path] new best_solution_found (1.852749): 0.93233889 29 nodes
+[BSG_path] new best_solution_found (1.931854): 0.93439206 33 nodes
+[BSG_path] new best_solution_found (2.035022): 0.93775814 30 nodes
+[BSG_path] new best_solution_found (2.128891): 0.93969508 31 nodes
+[BSG_path] new best_solution_found (2.257093): 0.94147573 33 nodes
+[DoubleEffort] new best_solution_found (2.317482): 0.94147573
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (7.39139): 0.94218415 37 nodes
+[DoubleEffort] new best_solution_found (7.416209): 0.94218415
+beams/max_level_size:8/64
+% volume utilization
+94.218415
+
+=== BR11  instance 42 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR11.txt
+Instance:43
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.05703): 0.90218344 31 nodes
+[BSG_path] new best_solution_found (0.084395): 0.92926747 35 nodes
+[BSG_path] new best_solution_found (0.448642): 0.92975069 37 nodes
+[BSG_path] new best_solution_found (1.431214): 0.93958338 37 nodes
+[BSG_path] new best_solution_found (2.101538): 0.94406214 39 nodes
+[BSG_path] new best_solution_found (2.388023): 0.94627553 40 nodes
+[BSG_path] new best_solution_found (2.444767): 0.94639637 41 nodes
+[DoubleEffort] new best_solution_found (2.648077): 0.94639637
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (7.89921): 0.94772589 40 nodes
+[BSG_path] new best_solution_found (8.303479): 0.94774391 39 nodes
+[DoubleEffort] new best_solution_found (8.334905): 0.94774391
+beams/max_level_size:8/64
+% volume utilization
+94.774391
+
+=== BR11  instance 43 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR11.txt
+Instance:44
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.107552): 0.90703149 36 nodes
+[BSG_path] new best_solution_found (0.269596): 0.92395836 40 nodes
+[BSG_path] new best_solution_found (0.735253): 0.92475624 44 nodes
+[BSG_path] new best_solution_found (0.958163): 0.92518709 42 nodes
+[BSG_path] new best_solution_found (1.868599): 0.92913506 42 nodes
+[BSG_path] new best_solution_found (3.830519): 0.92997306 41 nodes
+[BSG_path] new best_solution_found (4.007145): 0.9331173 39 nodes
+[BSG_path] new best_solution_found (5.187665): 0.93358617 37 nodes
+[BSG_path] new best_solution_found (5.977427): 0.93384978 41 nodes
+[BSG_path] new best_solution_found (6.313069): 0.93729595 40 nodes
+[BSG_path] new best_solution_found (6.828068): 0.94013035 43 nodes
+[BSG_path] new best_solution_found (6.929261): 0.9429355 43 nodes
+[BSG_path] new best_solution_found (7.077137): 0.94343069 43 nodes
+[DoubleEffort] new best_solution_found (7.682953): 0.94343069
+beams/max_level_size:6/36
+% volume utilization
+94.343069
+
+=== BR11  instance 44 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR11.txt
+Instance:45
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.062631): 0.89807831 40 nodes
+[BSG_path] new best_solution_found (0.102176): 0.90516683 39 nodes
+[BSG_path] new best_solution_found (0.139703): 0.90839861 37 nodes
+[BSG_path] new best_solution_found (0.184702): 0.91521704 41 nodes
+[BSG_path] new best_solution_found (0.323676): 0.92592279 34 nodes
+[BSG_path] new best_solution_found (0.355174): 0.92836214 37 nodes
+[BSG_path] new best_solution_found (1.710197): 0.93042395 45 nodes
+[BSG_path] new best_solution_found (2.636348): 0.93252308 43 nodes
+[BSG_path] new best_solution_found (3.455336): 0.93359424 45 nodes
+[BSG_path] new best_solution_found (3.598453): 0.93626839 44 nodes
+[DoubleEffort] new best_solution_found (3.616509): 0.93626839
+beams/max_level_size:6/36
+% volume utilization
+93.626839
+
+=== BR11  instance 45 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR11.txt
+Instance:46
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.047966): 0.93517715 39 nodes
+[BSG_path] new best_solution_found (2.377284): 0.9355406 38 nodes
+[BSG_path] new best_solution_found (2.389255): 0.93563598 39 nodes
+[BSG_path] new best_solution_found (2.394227): 0.93737332 39 nodes
+[BSG_path] new best_solution_found (2.52135): 0.93806884 40 nodes
+[DoubleEffort] new best_solution_found (2.555612): 0.93806884
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (6.541114): 0.93870973 42 nodes
+[BSG_path] new best_solution_found (7.773623): 0.93970329 39 nodes
+[BSG_path] new best_solution_found (7.801278): 0.94077416 40 nodes
+[BSG_path] new best_solution_found (8.047632): 0.94101956 41 nodes
+[BSG_path] new best_solution_found (8.129994): 0.94140321 39 nodes
+[DoubleEffort] new best_solution_found (8.160311): 0.94140321
+beams/max_level_size:8/64
+% volume utilization
+94.140321
+
+=== BR12  instance 42 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR12.txt
+Instance:43
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:8740
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.039768): 0.89846798 33 nodes
+[BSG_path] new best_solution_found (0.061976): 0.93654845 38 nodes
+[BSG_path] new best_solution_found (1.50134): 0.93741699 41 nodes
+[BSG_path] new best_solution_found (1.622301): 0.94153851 38 nodes
+[BSG_path] new best_solution_found (2.24015): 0.94158494 40 nodes
+[DoubleEffort] new best_solution_found (2.252497): 0.94158494
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (6.239773): 0.9442524 35 nodes
+[BSG_path] new best_solution_found (6.638937): 0.94580746 41 nodes
+[BSG_path] new best_solution_found (7.121418): 0.94620547 41 nodes
+[BSG_path] new best_solution_found (7.15581): 0.94695972 38 nodes
+[BSG_path] new best_solution_found (7.341105): 0.94711608 42 nodes
+[DoubleEffort] new best_solution_found (7.348122): 0.94711608
+beams/max_level_size:8/64
+% volume utilization
+94.711608
+
+=== BR12  instance 43 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR12.txt
+Instance:44
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.102211): 0.92184315 45 nodes
+[BSG_path] new best_solution_found (0.852389): 0.92206452 48 nodes
+[BSG_path] new best_solution_found (1.067697): 0.92716448 47 nodes
+[BSG_path] new best_solution_found (2.799573): 0.92803292 47 nodes
+[BSG_path] new best_solution_found (3.100356): 0.92977598 47 nodes
+[BSG_path] new best_solution_found (3.652878): 0.93335825 43 nodes
+[BSG_path] new best_solution_found (6.014408): 0.93339926 40 nodes
+[BSG_path] new best_solution_found (6.253205): 0.93764737 44 nodes
+[BSG_path] new best_solution_found (6.412505): 0.93842614 39 nodes
+[BSG_path] new best_solution_found (6.849689): 0.93905211 49 nodes
+[BSG_path] new best_solution_found (6.93946): 0.93953726 38 nodes
+[BSG_path] new best_solution_found (7.474642): 0.94161578 42 nodes
+[BSG_path] new best_solution_found (7.567009): 0.94244876 45 nodes
+[BSG_path] new best_solution_found (7.787088): 0.94361308 44 nodes
+[DoubleEffort] new best_solution_found (7.858953): 0.94361308
+beams/max_level_size:6/36
+% volume utilization
+94.361308
+
+=== BR12  instance 44 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR12.txt
+Instance:45
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.069745): 0.90756573 39 nodes
+[BSG_path] new best_solution_found (0.176145): 0.91076218 42 nodes
+[BSG_path] new best_solution_found (0.205026): 0.91554995 37 nodes
+[BSG_path] new best_solution_found (0.353059): 0.91611729 39 nodes
+[BSG_path] new best_solution_found (0.775945): 0.92145979 35 nodes
+[BSG_path] new best_solution_found (0.860107): 0.92531963 35 nodes
+[BSG_path] new best_solution_found (1.369285): 0.92545692 35 nodes
+[BSG_path] new best_solution_found (1.416219): 0.92658731 34 nodes
+[BSG_path] new best_solution_found (1.434351): 0.93118966 33 nodes
+[BSG_path] new best_solution_found (2.058684): 0.93252148 32 nodes
+[BSG_path] new best_solution_found (2.124814): 0.93279533 32 nodes
+[BSG_path] new best_solution_found (2.156395): 0.93373768 32 nodes
+[BSG_path] new best_solution_found (2.182706): 0.9339208 33 nodes
+[BSG_path] new best_solution_found (2.185178): 0.93403599 33 nodes
+[BSG_path] new best_solution_found (2.196687): 0.93475185 36 nodes
+[BSG_path] new best_solution_found (2.208383): 0.93477053 36 nodes
+[BSG_path] new best_solution_found (2.233458): 0.9363998 34 nodes
+[BSG_path] new best_solution_found (2.268396): 0.93751553 38 nodes
+[BSG_path] new best_solution_found (2.368496): 0.93766698 38 nodes
+[DoubleEffort] new best_solution_found (2.369674): 0.93766698
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (5.264213): 0.93834701 37 nodes
+[BSG_path] new best_solution_found (7.771891): 0.93835306 37 nodes
+[BSG_path] new best_solution_found (7.792297): 0.94048782 39 nodes
+[BSG_path] new best_solution_found (7.894781): 0.94095539 39 nodes
+[BSG_path] new best_solution_found (8.644518): 0.94164147 39 nodes
+[BSG_path] new best_solution_found (8.717709): 0.94409341 39 nodes
+[DoubleEffort] new best_solution_found (8.880285): 0.94409341
+beams/max_level_size:8/64
+% volume utilization
+94.409341
+
+=== BR12  instance 45 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR12.txt
+Instance:46
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:7527
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.043013): 0.90565783 36 nodes
+[BSG_path] new best_solution_found (0.061626): 0.9117268 33 nodes
+[BSG_path] new best_solution_found (0.209816): 0.91463282 31 nodes
+[BSG_path] new best_solution_found (0.24709): 0.92233897 40 nodes
+[BSG_path] new best_solution_found (0.714036): 0.92483511 32 nodes
+[BSG_path] new best_solution_found (0.753284): 0.92668109 36 nodes
+[BSG_path] new best_solution_found (0.998328): 0.92958917 38 nodes
+[BSG_path] new best_solution_found (2.104614): 0.92986854 38 nodes
+[BSG_path] new best_solution_found (2.129496): 0.93103971 38 nodes
+[BSG_path] new best_solution_found (2.167045): 0.93336868 35 nodes
+[BSG_path] new best_solution_found (2.210171): 0.93489054 37 nodes
+[BSG_path] new best_solution_found (2.221387): 0.93557695 37 nodes
+[BSG_path] new best_solution_found (2.230508): 0.93571454 37 nodes
+[DoubleEffort] new best_solution_found (2.236415): 0.93571454
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (2.54782): 0.9375237 36 nodes
+[BSG_path] new best_solution_found (5.669011): 0.9415874 37 nodes
+[BSG_path] new best_solution_found (6.391743): 0.9419445 37 nodes
+[BSG_path] new best_solution_found (6.425015): 0.94231134 38 nodes
+[BSG_path] new best_solution_found (6.592236): 0.94258432 36 nodes
+[BSG_path] new best_solution_found (6.938658): 0.94340759 37 nodes
+[BSG_path] new best_solution_found (7.107472): 0.9435513 36 nodes
+[BSG_path] new best_solution_found (7.140428): 0.94476175 35 nodes
+[BSG_path] new best_solution_found (7.153875): 0.94525195 38 nodes
+[BSG_path] new best_solution_found (7.170594): 0.94637167 38 nodes
+[DoubleEffort] new best_solution_found (7.347997): 0.94637167
+beams/max_level_size:8/64
+% volume utilization
+94.637167
+
+=== BR13  instance 42 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR13.txt
+Instance:43
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:7481
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.040032): 0.90207022 36 nodes
+[BSG_path] new best_solution_found (0.056614): 0.91809076 47 nodes
+[BSG_path] new best_solution_found (0.171185): 0.92616573 36 nodes
+[BSG_path] new best_solution_found (0.382134): 0.93442024 40 nodes
+[BSG_path] new best_solution_found (0.800988): 0.93505661 40 nodes
+[BSG_path] new best_solution_found (1.293672): 0.93610109 44 nodes
+[BSG_path] new best_solution_found (2.081528): 0.9361853 44 nodes
+[BSG_path] new best_solution_found (2.242481): 0.93710715 42 nodes
+[BSG_path] new best_solution_found (2.249622): 0.93929102 44 nodes
+[BSG_path] new best_solution_found (2.391594): 0.94041806 44 nodes
+[DoubleEffort] new best_solution_found (2.557777): 0.94041806
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (6.805722): 0.94165513 41 nodes
+[BSG_path] new best_solution_found (7.27761): 0.94281164 39 nodes
+[DoubleEffort] new best_solution_found (7.406075): 0.94281164
+beams/max_level_size:8/64
+% volume utilization
+94.281164
+
+=== BR13  instance 43 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR13.txt
+Instance:44
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.060874): 0.91242598 38 nodes
+[BSG_path] new best_solution_found (0.102445): 0.91548311 46 nodes
+[BSG_path] new best_solution_found (0.175123): 0.92682988 44 nodes
+[BSG_path] new best_solution_found (0.405771): 0.93456378 40 nodes
+[BSG_path] new best_solution_found (0.733389): 0.93459093 37 nodes
+[BSG_path] new best_solution_found (1.367959): 0.93615848 45 nodes
+[BSG_path] new best_solution_found (2.202163): 0.93839032 45 nodes
+[BSG_path] new best_solution_found (2.225979): 0.9389974 48 nodes
+[BSG_path] new best_solution_found (3.345232): 0.94282507 49 nodes
+[BSG_path] new best_solution_found (3.776739): 0.9433617 47 nodes
+[BSG_path] new best_solution_found (3.868539): 0.94517169 48 nodes
+[BSG_path] new best_solution_found (4.090079): 0.94571327 48 nodes
+[DoubleEffort] new best_solution_found (4.269037): 0.94571327
+beams/max_level_size:6/36
+% volume utilization
+94.571327
+
+=== BR13  instance 44 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR13.txt
+Instance:45
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.056589): 0.92129369 43 nodes
+[BSG_path] new best_solution_found (0.900368): 0.92335603 43 nodes
+[BSG_path] new best_solution_found (1.012529): 0.92831348 40 nodes
+[BSG_path] new best_solution_found (2.332652): 0.9303738 39 nodes
+[BSG_path] new best_solution_found (2.759071): 0.93272876 41 nodes
+[BSG_path] new best_solution_found (2.886664): 0.93284412 42 nodes
+[BSG_path] new best_solution_found (2.908274): 0.93291727 42 nodes
+[BSG_path] new best_solution_found (2.913593): 0.93482563 42 nodes
+[BSG_path] new best_solution_found (2.914853): 0.93485441 42 nodes
+[DoubleEffort] new best_solution_found (3.018748): 0.93485441
+beams/max_level_size:6/36
+% volume utilization
+93.485441
+
+=== BR13  instance 45 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR13.txt
+Instance:46
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.085531): 0.91129938 45 nodes
+[BSG_path] new best_solution_found (0.140119): 0.91887149 43 nodes
+[BSG_path] new best_solution_found (0.364213): 0.91972807 43 nodes
+[BSG_path] new best_solution_found (0.792141): 0.92067853 44 nodes
+[BSG_path] new best_solution_found (2.3353): 0.92369013 42 nodes
+[BSG_path] new best_solution_found (2.556411): 0.92381336 48 nodes
+[BSG_path] new best_solution_found (3.946191): 0.93118368 43 nodes
+[BSG_path] new best_solution_found (5.440358): 0.93231752 48 nodes
+[BSG_path] new best_solution_found (5.460726): 0.93284056 48 nodes
+[BSG_path] new best_solution_found (5.570409): 0.93426444 48 nodes
+[BSG_path] new best_solution_found (5.647078): 0.93538928 49 nodes
+[BSG_path] new best_solution_found (5.764669): 0.93694729 49 nodes
+[DoubleEffort] new best_solution_found (5.779894): 0.93694729
+beams/max_level_size:6/36
+% volume utilization
+93.694729
+
+=== BR14  instance 42 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR14.txt
+Instance:43
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:8430
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.043312): 0.9128664 44 nodes
+[BSG_path] new best_solution_found (0.131022): 0.91389446 42 nodes
+[BSG_path] new best_solution_found (0.222039): 0.91596999 44 nodes
+[BSG_path] new best_solution_found (0.339419): 0.92103958 46 nodes
+[BSG_path] new best_solution_found (0.453699): 0.92123616 44 nodes
+[BSG_path] new best_solution_found (0.649896): 0.93164925 41 nodes
+[BSG_path] new best_solution_found (0.66585): 0.9337527 40 nodes
+[BSG_path] new best_solution_found (1.414154): 0.93581654 42 nodes
+[BSG_path] new best_solution_found (2.267027): 0.93627464 43 nodes
+[BSG_path] new best_solution_found (2.456111): 0.93754963 44 nodes
+[BSG_path] new best_solution_found (2.70325): 0.93764817 43 nodes
+[BSG_path] new best_solution_found (2.793792): 0.93940392 41 nodes
+[BSG_path] new best_solution_found (2.947183): 0.94044388 45 nodes
+[BSG_path] new best_solution_found (3.297689): 0.94166573 44 nodes
+[DoubleEffort] new best_solution_found (3.325139): 0.94166573
+beams/max_level_size:6/36
+% volume utilization
+94.166573
+
+=== BR14  instance 43 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR14.txt
+Instance:44
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.084218): 0.92504086 43 nodes
+[BSG_path] new best_solution_found (1.333619): 0.92687086 44 nodes
+[BSG_path] new best_solution_found (1.741503): 0.92971078 53 nodes
+[BSG_path] new best_solution_found (3.881294): 0.93759566 44 nodes
+[BSG_path] new best_solution_found (4.437059): 0.93772779 54 nodes
+[BSG_path] new best_solution_found (4.775223): 0.94050593 46 nodes
+[BSG_path] new best_solution_found (5.445414): 0.9446329 46 nodes
+[BSG_path] new best_solution_found (5.899838): 0.94473719 44 nodes
+[BSG_path] new best_solution_found (5.958756): 0.9455691 45 nodes
+[BSG_path] new best_solution_found (5.964628): 0.94560101 45 nodes
+[BSG_path] new best_solution_found (5.96872): 0.94635476 45 nodes
+[DoubleEffort] new best_solution_found (5.985243): 0.94635476
+beams/max_level_size:6/36
+% volume utilization
+94.635476
+
+=== BR14  instance 44 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR14.txt
+Instance:45
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.061892): 0.90268877 47 nodes
+[BSG_path] new best_solution_found (0.121795): 0.91702025 50 nodes
+[BSG_path] new best_solution_found (0.469365): 0.91917262 44 nodes
+[BSG_path] new best_solution_found (0.562538): 0.92001032 43 nodes
+[BSG_path] new best_solution_found (1.454218): 0.92102569 43 nodes
+[BSG_path] new best_solution_found (1.480145): 0.92289976 46 nodes
+[BSG_path] new best_solution_found (1.58706): 0.92647687 46 nodes
+[BSG_path] new best_solution_found (2.572237): 0.92851163 48 nodes
+[BSG_path] new best_solution_found (2.719188): 0.93323136 48 nodes
+[BSG_path] new best_solution_found (3.371668): 0.9338985 46 nodes
+[BSG_path] new best_solution_found (3.615558): 0.93441559 42 nodes
+[BSG_path] new best_solution_found (3.76095): 0.93609281 45 nodes
+[BSG_path] new best_solution_found (3.837585): 0.93634762 44 nodes
+[BSG_path] new best_solution_found (3.981743): 0.93673366 44 nodes
+[BSG_path] new best_solution_found (4.15781): 0.93799074 48 nodes
+[BSG_path] new best_solution_found (4.274005): 0.93884386 48 nodes
+[DoubleEffort] new best_solution_found (4.286782): 0.93884386
+beams/max_level_size:6/36
+% volume utilization
+93.884386
+
+=== BR14  instance 45 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR14.txt
+Instance:46
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.062376): 0.91647053 37 nodes
+[BSG_path] new best_solution_found (0.101929): 0.92794143 41 nodes
+[BSG_path] new best_solution_found (1.133576): 0.92870239 43 nodes
+[BSG_path] new best_solution_found (1.99851): 0.93437096 43 nodes
+[BSG_path] new best_solution_found (2.682548): 0.93574216 41 nodes
+[BSG_path] new best_solution_found (2.731817): 0.93579896 42 nodes
+[BSG_path] new best_solution_found (2.78375): 0.93720612 41 nodes
+[BSG_path] new best_solution_found (2.797183): 0.93858473 40 nodes
+[BSG_path] new best_solution_found (3.099107): 0.93873309 41 nodes
+[BSG_path] new best_solution_found (3.149452): 0.93951658 43 nodes
+[BSG_path] new best_solution_found (3.199235): 0.93966953 41 nodes
+[BSG_path] new best_solution_found (3.203865): 0.93996461 40 nodes
+[BSG_path] new best_solution_found (3.231156): 0.94091122 40 nodes
+[DoubleEffort] new best_solution_found (3.237579): 0.94091122
+beams/max_level_size:6/36
+% volume utilization
+94.091122
+
+=== BR15  instance 42 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR15.txt
+Instance:43
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:4738
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.038236): 0.92699785 43 nodes
+[BSG_path] new best_solution_found (1.499567): 0.93070843 49 nodes
+[BSG_path] new best_solution_found (2.362851): 0.93234328 49 nodes
+[BSG_path] new best_solution_found (2.465272): 0.93267273 47 nodes
+[BSG_path] new best_solution_found (2.687169): 0.93300181 48 nodes
+[BSG_path] new best_solution_found (2.808531): 0.93381415 50 nodes
+[BSG_path] new best_solution_found (2.839102): 0.93481862 48 nodes
+[BSG_path] new best_solution_found (2.870919): 0.93596755 46 nodes
+[BSG_path] new best_solution_found (3.158608): 0.93607447 48 nodes
+[BSG_path] new best_solution_found (3.166335): 0.93629614 52 nodes
+[BSG_path] new best_solution_found (3.26769): 0.94106868 48 nodes
+[BSG_path] new best_solution_found (4.466874): 0.94220299 49 nodes
+[BSG_path] new best_solution_found (4.542025): 0.9422796 48 nodes
+[BSG_path] new best_solution_found (4.566689): 0.942726 49 nodes
+[DoubleEffort] new best_solution_found (4.56823): 0.942726
+beams/max_level_size:6/36
+% volume utilization
+94.2726
+
+=== BR15  instance 43 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR15.txt
+Instance:44
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:10000
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.073467): 0.91694438 49 nodes
+[BSG_path] new best_solution_found (0.150429): 0.91881672 46 nodes
+[BSG_path] new best_solution_found (0.349772): 0.92662819 48 nodes
+[BSG_path] new best_solution_found (1.86719): 0.92886328 44 nodes
+[BSG_path] new best_solution_found (3.00229): 0.92912815 47 nodes
+[BSG_path] new best_solution_found (3.085857): 0.92945886 47 nodes
+[BSG_path] new best_solution_found (3.409362): 0.92956073 45 nodes
+[BSG_path] new best_solution_found (3.544133): 0.93120043 47 nodes
+[BSG_path] new best_solution_found (3.715235): 0.93169561 47 nodes
+[BSG_path] new best_solution_found (3.952297): 0.93280603 45 nodes
+[BSG_path] new best_solution_found (4.025721): 0.93447199 47 nodes
+[BSG_path] new best_solution_found (4.243315): 0.93481712 48 nodes
+[BSG_path] new best_solution_found (4.247716): 0.93654031 50 nodes
+[BSG_path] new best_solution_found (4.417691): 0.93741087 50 nodes
+[BSG_path] new best_solution_found (4.447657): 0.93840507 50 nodes
+[DoubleEffort] new best_solution_found (4.488764): 0.93840507
+beams/max_level_size:6/36
+% volume utilization
+93.840507
+
+=== BR15  instance 44 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR15.txt
+Instance:45
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:8770
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.044683): 0.91227736 45 nodes
+[BSG_path] new best_solution_found (0.140957): 0.91920553 43 nodes
+[BSG_path] new best_solution_found (0.328356): 0.92258247 46 nodes
+[BSG_path] new best_solution_found (0.82946): 0.92485681 45 nodes
+[BSG_path] new best_solution_found (1.413082): 0.92775977 48 nodes
+[BSG_path] new best_solution_found (2.041388): 0.92784449 48 nodes
+[BSG_path] new best_solution_found (2.129143): 0.92794283 47 nodes
+[BSG_path] new best_solution_found (3.540401): 0.92813489 47 nodes
+[BSG_path] new best_solution_found (3.80342): 0.92819896 48 nodes
+[BSG_path] new best_solution_found (3.984741): 0.92830172 48 nodes
+[BSG_path] new best_solution_found (3.996797): 0.9290659 48 nodes
+[BSG_path] new best_solution_found (4.015339): 0.92927285 47 nodes
+[BSG_path] new best_solution_found (4.048105): 0.92944952 48 nodes
+[BSG_path] new best_solution_found (4.051237): 0.93043069 48 nodes
+[DoubleEffort] new best_solution_found (4.202276): 0.93043069
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (9.277255): 0.9318555 53 nodes
+[DoubleEffort] new best_solution_found (10.002281): 0.9318555
+% volume utilization
+93.18555
+
+=== BR15  instance 45 ===
+***** Creando el contenedor ****
+File(BR): problems/clp/benchs/BR/BR15.txt
+Instance:46
+min_fr:0.98
+Maxtime:10
+587 233 220
+n_blocks:6435
+greedy
+bsg
+double effort
+copying state
+running
+beams/max_level_size:4/16
+[BSG_path] new best_solution_found (0.047131): 0.90222349 45 nodes
+[BSG_path] new best_solution_found (0.087513): 0.91458307 42 nodes
+[BSG_path] new best_solution_found (0.148037): 0.91526211 43 nodes
+[BSG_path] new best_solution_found (0.209153): 0.91871808 42 nodes
+[BSG_path] new best_solution_found (0.230363): 0.93329298 48 nodes
+[BSG_path] new best_solution_found (1.745191): 0.93397391 48 nodes
+[BSG_path] new best_solution_found (2.064372): 0.93537346 49 nodes
+[BSG_path] new best_solution_found (2.100148): 0.93820693 47 nodes
+[BSG_path] new best_solution_found (2.459967): 0.94082813 49 nodes
+[BSG_path] new best_solution_found (2.481369): 0.94151864 48 nodes
+[BSG_path] new best_solution_found (2.8796): 0.94353694 49 nodes
+[DoubleEffort] new best_solution_found (3.128847): 0.94353694
+beams/max_level_size:6/36
+[BSG_path] new best_solution_found (9.311121): 0.94489262 49 nodes
+[BSG_path] new best_solution_found (9.461314): 0.94644549 50 nodes
+[BSG_path] new best_solution_found (9.816086): 0.94652212 49 nodes
+[BSG_path] new best_solution_found (9.816307): 0.94703622 50 nodes
+[DoubleEffort] new best_solution_found (9.831184): 0.94703622
+beams/max_level_size:8/64
+% volume utilization
+94.703622
+
